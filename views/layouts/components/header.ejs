@@ -1,0 +1,52 @@
+<header>
+
+	<div class="head_plain">
+		<div class="header-top-bar-inner row middle-xs start-xs ">
+			<div class="header-top-bar-area  col-xs area-left">
+				<% if (user && user.role === 'admin') { %>
+					<a class="admin_panel" href="/<%- locale  %>/admin"><%- __tr('Admin') %> <i class="fa fa-wrench" aria-hidden="true"></i></a>
+				<% } %>
+			</div>
+			<div class="header-top-bar-area  col-xs-fit area-right">
+				<div data-type="group" data-dynamic-mod="true" class="top-bar-social-icons">
+					<a target="_blank" class="social-icon" href="http://fb.me/letspartner.co">
+						<i class="fa fa-facebook-official"></i>
+					</a>
+					<a target="_blank" class="social-icon" href="https://twitter.com/LetsPartner_co">
+						<i class="fa fa-twitter-square"></i>
+					</a>
+					<a target="_blank" class="social-icon" href="https://www.instagram.com/Letspartner.co/">
+						<i class="fa fa-instagram"></i>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fixed_plain">
+		<a class="text-logo" data-type="group" data-dynamic-mod="true" href="/<%- locale %>">Let's<span style="font-weight: 300;" class="span12"> Partner:</span> Финтех<span style="font-weight: 300;" class="span12"> Маркетплейс</span><br> &amp;<span style="font-weight: 300;" class="span12"> Каталог</span></a>
+
+		<div class="header_menu">
+			<a href="/<%- locale  %>/news"><%- __tr("News") %></a>
+			<a href="/<%- locale  %>/companies/startup"><%- __tr("Startups") %></a>
+			<a href="/<%- locale  %>/companies/corporation"><%- __tr("Corporations") %></a>
+		</div>
+
+		<div class="header_right">
+			<%- include('lang_selector'); %>
+
+			<% if (isGuest) { %>
+				<div class="profile_buttons">
+					<a href="/<%- locale  %>/login">Login</a>
+				</div>
+			<% } else { %>
+				<div class="profile_buttons">
+					<a href="/<%- locale  %>/profile"><img src="<%= user.image ? `/uploads${user.image}` : '/uploads/default/profile.svg' %>" alt=""><%- user.name %></a>
+					<a href="/action/logout" class="btn btn-default btn-sm">Logout</a>
+				</div>
+			<% } %>
+		</div>
+
+	</div>
+</header>

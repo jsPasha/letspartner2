@@ -1,0 +1,147 @@
+<% 
+	let userInTeam = 0;
+	obj.members.map(el => {
+		if (el.userId === user.id) userInTeam = 1;
+	});
+%>
+
+<% if (message.length > 0) { %>
+	<div class="<%= message[0].type %>-message axios-message">
+		<p><%= message[0].text %></p>
+	</div>
+<% } %>
+
+<div v-show="activePart == 'team'" class="company_form_items">
+	<h2>Команда</h2>
+
+	<%- teamList({ obj, locale }) %>
+
+	<div class="meet_team form_block">
+		<h2>Пригласить</h2>
+
+		<input type="hidden" v-model="userInTeam" value="<%- userInTeam %>">
+
+		<div v-if="!userInTeam">
+
+			<label>
+				<span>Add me</span>
+				<input type="checkbox" v-model="addMe">
+			</label>
+
+			<form v-if="addMe" method="POST" action="/action/add-member/<%- obj.id %>" class="meet_me add_me_form">
+
+				<input type="hidden" name="add_me" value="1" />
+				<input type="hidden" name="type" value="<%- type %>">
+				<input type="hidden" name="hashtag" v-model="activePart">
+ 				
+				<div class="add_team_head">
+					<img src="/uploads<%- user.image %>" alt="">
+					<span><%- user.name %> <%- user.surname %></span>
+					<div class="form-group">
+						<label>
+							<span><%- __tr("Position") %></span>
+							<input type="text" required name="position" value="">
+						</label>
+					</div>
+					<div class="radiobuttons">
+						<label>
+							<input type="radio" required name="companyRole" value="member">
+							<span>Member</span>
+						</label>
+						<label>
+							<input type="radio" required name="companyRole" value="founder">
+							<span>Founder</span>
+						</label>
+					</div>
+				</div>
+				<div class="add_team_about">
+					<textarea placeholder="<%- __tr('Short_description_about_me') %>" name="about"></textarea>
+				</div>
+				<div class="center">
+					<input type="submit" value="<%- __tr('Add') %>" />
+				</div>
+			</form>
+
+		</div>
+
+		<p>Новый член команды</p>
+
+		<form method="POST" action="/action/add-member/<%- obj.id %>">
+
+			<input type="hidden" name="type" value="<%- type %>">
+			<input type="hidden" name="hashtag" v-model="activePart">
+ 			
+			<div class="add_team_head">
+				<div class="radiobuttons">
+					<label>
+						<input type="radio" required name="companyRole" value="member">
+						<span>Member</span>
+					</label>
+					<label>
+						<input type="radio" required name="companyRole" value="founder">
+						<span>Founder</span>
+					</label>
+				</div>				
+				<div class="form-group">
+					<label>
+						<span><%- __tr("Position") %></span>
+						<input type="text" required name="position" value="">
+					</label>
+				</div>				
+			</div>
+
+			<div class="add_team_head">
+				<label>
+					<span><%- __tr("Name") %></span>
+					<input type="text" required name="name" value="">
+				</label>
+				<label>
+					<span><%- __tr("Email") %></span>
+					<input type="text" required name="email" value="">
+				</label>
+				<label>
+					<span><%- __tr("Phone") %></span>
+					<input type="text" required name="phone" value="">
+				</label>
+				<label>
+					<span><%- __tr("Admin rights") %></span>
+					<select required name="adminRole">
+						<option value="admin">Администратор компании</option>
+						<option value="user">Представитель компании</option>
+					</select>
+				</label>
+			</div>
+
+			<div class="add_team_about">
+				<textarea placeholder="<%- __tr('Short_description_about_me') %>" name="about"></textarea>
+			</div>
+			<div class="center">
+				<input type="submit" value="<%- __tr('Add') %>" />
+			</div>
+		</form>
+
+		<% if (admin) { %>
+			<form method="POST" class="<%-action%>_form ajax_form" action="/action/admin/company/<%- type %>/update/<%- obj.id %>">
+				<div class="form_block">
+					<div class="form-group">
+						<label>Что не так, что нужно изменить чтобы пройти модерацию, или рекомендуем улучшить</label>
+						<textarea name="admin_message[reject]"><%- (obj.admin_message && obj.admin_message.reject) ? obj.admin_message.reject : '' %></textarea>
+					</div>
+							
+					<div class="button_checkbox admin_button_checkbox">
+						<label class="published">
+							<span><%- __tr("Confirm") %></span>
+							<input type="radio" v-on:click="ajaxSubmit" name="status" value="published">
+						</label>
+						<label class="reject">
+							<span><%- __tr("Reject") %></span>
+							<input type="radio" v-on:click="ajaxSubmit" name="status" value="reject">
+						</label>
+					</div>
+				</div>
+			</form>
+		<% } %>
+
+	</div>
+
+</div>

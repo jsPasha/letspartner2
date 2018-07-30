@@ -1,0 +1,58 @@
+<div class="container profile_section">
+
+	<h1><%- __tr(`${type}_page_settings`) %></h1>
+
+	<div class="admin_block">
+
+		<%- include('../../menu'); %>
+
+		<div>
+
+			<form method="POST" class="settings_form update_form" action="/action/admin/page-settings/<%-type%>">
+
+				<div class="form_block">
+					<h2><%- __tr("Title") %></h2>
+					<% locales.forEach((lang, i) => { %>
+						<div class="form-group">
+							<label for="name_<%-lang%>"><%- __tr("Name") %> <%-lang%></label>
+							<textarea maxlength="200" <%= i === 0 ? 'required' : '' %> id="name_<%-lang%>" name="name[<%-lang%>]" rows="2"><%- page.name[lang] %></textarea>
+						</div>
+					<% }); %>
+				</div>
+
+				<div class="form_block">
+					<h2><%- __tr("Description") %></h2>
+					<% locales.forEach((lang, i) => { %>
+						<div class="form-group">
+							<label for="description_<%-lang%>"><%- __tr("Description") %> <%-lang%></label>
+							<textarea maxlength="200" id="description_<%-lang%>" name="description[<%-lang%>]" rows="6"><%- page.description[lang] %></textarea>
+						</div>
+					<% }); %>
+				</div>
+				
+				<div class="form_block">
+					<h2><%- __tr("Image") %></h2>
+					<div class="form-group form-group-image-pick">
+						<label><%- __tr(`${type}_main_image`) %></label>
+						<div class="image_pick_area<%- (page.image) ? ' active' : '' %>">
+							<input class="image_pick" data-ratio="16:9" type="file" accept="image/">
+							<div class="cropped_image_view">
+								<%-(page.image) ? `<img src="/uploads${page.image}">` : ''%>
+							</div>
+							<input type="hidden" class="hidden_image_url" value="<%=(page.image) ? page.image : ''%>" name="image" />
+							<a class="upload_new_image" data-del-url="<%- page.image %>" href="#"><%- __tr("upload_new_image") %></a>
+							<a class="delete_image" data-url="<%- page.image %>" href="#"><%- __tr("delete_image") %></a>				
+						</div>
+					</div>
+				</div>
+
+				<div class="center">
+					<input type="submit" value="<%= __tr('save') %>">
+				</div>
+			</form>
+
+		</div>
+
+	</div>
+
+</div>

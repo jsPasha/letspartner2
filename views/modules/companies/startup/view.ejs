@@ -1,0 +1,59 @@
+<div class="page_head company_page_head" style="background-image: url(/uploads<%=company.images.main%>)">
+    <div class="container">
+        <h1><%-company.name[locale] || company.name[locales[0]]%></h1>
+        <div class="page_head_info">
+            <img src="/uploads<%=company.images.logo%>" alt="">
+            <p><%-company.idea %></p>
+        </div>
+        <div class="page_head_bottom_info">
+            <ul class="contacts" style="opacity: 0;">
+            </ul>
+            <ul class="general_info">
+                <%- company.stages ? `<li><b>${__tr("Stages")}</b>: 
+                    ${company.stages.map((item)=>{
+                        for (let i = 0; i < lists.length; i++) {
+                            if (lists[i].type === 'stages' && lists[i].alias === item) return lists[i].name[locale]
+                        }
+                    }).join(', ')}</li>` : '' %>
+                <% lists.forEach((item) => {
+                    if (item.type === 'activities' && item.alias === company.activity) { %>
+                        <%- `<li><b>${__tr("Direction")}:</b> ${item.name[locale]}</li>` %>
+                <% }}) %>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container company_body_wrap">	
+    
+    <h2 class="center">ОСНОВНАЯ ИНФОРМАЦИЯ О КОМПАНИИ</h2>
+    <div class="company_body">
+        <h3>Описание проекта, идея</h3>
+        <p><%- company.idea %></p>
+   
+        <h3>Проблема целевой аудитории</h3>
+        <p><%- company.targetAudience.problems[locale] || company.targetAudience.problems[0] || company.targetAudience.problems[1] %></p>
+
+        <h3>Решение проблемы целевой аудитории</h3>
+        <p><%- company.targetAudience.solving[locale] || company.targetAudience.solving[0] || company.targetAudience.solving[1] %></p>
+    </div>
+
+    <% if (company.members && company.members.length > 0) { %>
+        <h2 class="center">КОМАНДА</h2>
+        <div class="company_body">
+            <div class="team_list">
+                <% company.members.forEach((el) => { %>
+                    <div class="team_item">
+                        <img src="/uploads<%- el.image ? el.image : '/default/profile.svg' %>" alt="">
+                        <div>
+                            <p><%-el.name%> <%-el.surname%></p>
+                            <p><%- __tr(el.companyRole) %></p>
+                            <p><%- el.position %></p>
+                            <%- el.about ? `<p><b>${__tr("Achievements")}:</b><br> ${el.about}</p>` : '' %>
+                        </div>
+                    </div>
+                <% }); %>                
+            </div>
+        </div>
+    <% } %>
+</div>

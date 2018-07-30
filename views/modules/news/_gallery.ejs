@@ -1,0 +1,10 @@
+<div class="gallery_page">
+	<h2><%-name[locale]%></h2>
+
+	<div class="news_carousel owl-carousel">
+		<% gallery.forEach((el) => { %>
+			<img src="/uploads<%-el%>">
+		<% }) %>
+	</div>
+</div>
+

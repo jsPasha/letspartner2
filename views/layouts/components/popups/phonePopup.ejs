@@ -1,0 +1,34 @@
+<% const popup = phonePopup.content; %>
+
+<div id="phone_popup" class="mfp-hide">
+
+	<% popup.forEach((el) => {
+		switch (el.type) {
+			case "top_header": %>
+				<h2><%- el.text[locale] %></h2>
+			<% break;
+			case "header": %>
+				<h3><%- el.text[locale] %></h3>
+			<% break;
+			case "block": %>
+				<%- el.text[locale] %>
+			<% break;
+			default:
+				break;
+		}
+	}) %>
+
+	<form method="POST" class="update_form ajax_form" action="/action/profile/update">
+
+		<div class="form-group">
+			<label><%- __tr("Phone") %></label>
+			<div id="phone"></div>
+		</div>
+
+		<div class="center">
+			<button type="submit"><%= __tr('Save_phone') %></button>
+		</div>
+
+	</form>
+
+</div>

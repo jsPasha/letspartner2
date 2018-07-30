@@ -1,0 +1,56 @@
+<div class="profile_section requests">
+
+	<h1><%- __tr("Companies") %></h1>
+	
+	<div class="admin_block">
+
+		<%- include('../../menu'); %>
+		
+		<div>
+			<h2><%- __tr("User_requests") %></h2>
+			<p>Здесь ты можешь делать все, что угодно с заявками пользователей. Например: фильтровать как тебе угодно, редактировать, публиковать, приглашать учасников команды. <br>Для какого-либо действия, кликни на карандаш <img width="20" src="/img/pencil.svg" /> напротив нужной тебе заявки.</p>
+			
+			<div class="filter_form">
+				
+				<h4><%- __tr('Filter') %></h4>
+
+				<!--<div class="autocomplete-form-wrap">
+					<div class="autocomplete-form">
+						<label>Email</label>
+						<div class="search_input">							
+							<input class="user_autocomplete" data-model="users" placeholder="Search..." type="text" />
+							<button class="clear_input" type="button"></button>
+						</div>
+						<div class="user_autocomplete_result"></div>
+					</div>
+				</div>-->
+
+				<form id="filter_form" method="get" action="/<%-locale + url%>">
+					
+					<div class="flx aife">
+						<%- include('../../../widgets/select', {
+							name: "type",
+							options: ["startup", "corporation"]
+						}) %>
+	
+						<%- include('../../../widgets/select', {
+							name: "status",
+							options: ["moderation", "published", "draft", "reject"]
+						}) %>
+	
+						<div class="form-group date">
+							<label><%- __tr('date') %></label>
+							<input <%- !query['createdDate'] ? `data-` : '' %>name="createdDate" type="text" value="<%- query.createdDate %>" class="datepicker">
+						</div>					
+	
+						<button type="button" v-on:click="clearForm"><img src="/img/delete.svg" width="20" alt=""></button>
+					</div>
+				</form>
+			</div>
+
+			<%- include('_list'); %>
+		</div>
+
+	</div>
+
+</div>

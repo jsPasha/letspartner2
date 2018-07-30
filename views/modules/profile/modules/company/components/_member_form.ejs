@@ -1,0 +1,105 @@
+<div class="container profile_section">
+    <h1><%= __tr('Member_update') %></h1>
+
+    <div class="admin_block">
+
+        <%- include('../../../_profile_menu.ejs') %>
+
+        <div>
+
+            <%- include('../../../_menu') %>
+
+            <form method="POST" class="update_form" action="/action<%-url%>">
+				
+				<h2>Профиль учасника команды "<%-company.name[locale]%>"</h2>
+				<p>Профиль учасника команды не является профилем сайта. Информация введенная здесь будет актуальна только для компании "<%-company.name[locale]%>".</p>
+
+				<input type="hidden" name="back" value="/<%-locale%>/profile/company/<%-company.type%>/update/<%-company.id%>#team">
+
+				<div class="form_block">
+					<h2><%- __tr('Photo') %></h2>
+					<div class="form-group form-group-image-pick">
+						<div class="image_pick_area active">
+							<input class="image_pick" data-ratio="1:1" type="file" accept="image/">
+							<div class="cropped_image_view">
+								<img src="<%= member.image ? `/uploads${member.image}` : '/uploads/default/profile.svg' %>">
+							</div>
+							<input type="hidden" class="hidden_image_url" value="<%=member.image%>" name="image" />
+							<a class="upload_new_image" data-del-url="<%=member.image%>" href="#"><%- __tr("upload_new_image") %></a>
+				    	</div>
+					</div>
+				</div>
+
+                <div class="form_block">
+                    <div class="form-group">
+                        <label>
+                            <span><%- __tr("Position") %></span>
+                             <input type="text" required name="position" value="<%- member.position %>">
+                        </label>
+                    </div>
+                    <div class="radiobuttons">
+                        <label>
+                            <input type="radio" required name="companyRole" <%- member.companyRole === 'member' ? 'checked' : '' %> value="member">
+                            <span>Member</span>
+                        </label>
+                        <label>
+                            <input type="radio" <%- member.companyRole === 'founder' ? 'checked' : '' %> required name="companyRole" value="founder">
+                            <span>Founder</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="<%- __tr('Short_description_about_me') %>" name="about"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <span><%- __tr("Admin rights") %></span>
+                        <select required name="adminRole">
+                            <option value="admin" <%- member.adminRole === 'admin' ? 'selected' : '' %>>Администратор компании</option>
+                            <option value="user" <%- member.adminRole === 'admin' ? 'selected' : '' %>>Представитель компании</option>
+                        </select>
+                    </div>
+                </div>
+
+				<div class="form_block">
+
+					<h2><%- __tr('Contacts_information') %></h2>
+
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label><%- __tr("Name") %></label>
+							<input type="text" name="name" value="<%= member.name %>"/>
+						</div>
+						<div class="form-group col-md-6">
+							<label><%- __tr("Surname") %></label>
+							<input type="text" name="surname" value="<%= member.surname %>"/>
+						</div>
+						<div class="form-group col-md-6">
+							<label>Skype</label>
+							<input type="text" name="skype" value="<%= member.skype %>"/>
+						</div>
+						<div class="form-group col-md-6">
+							<label>Email</label>
+							<input type="text" name="email" value="<%= member.email %>"/>
+						</div>
+						<div class="form-group col-md-6">
+							<label><%- __tr("Phone") %></label>
+							<div id="phone" data-phone="<%= member.phone %>"></div>
+						</div>
+						<div class="form-group col-md-6">
+							<label><%- __tr("Timezone") %></label>
+							<select name="timezone" value="<%= member.timezone %>">
+                                <% timezoneJson.map((el) => { %>
+                                    <option value="<%= el.value %>" <%- el.value === member.timezone ? 'selected' : '' %>><%- el.text %></option>
+                                <% }); %>
+							</select>
+						</div>
+					</div>
+				</div>
+					
+				<div class="center">
+					<input type="submit" value="<%= __tr('update') %>">
+				</div>
+			</form>
+
+        </div>
+    </div>
+</div>

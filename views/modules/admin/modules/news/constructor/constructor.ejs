@@ -1,0 +1,53 @@
+<hr>
+
+<h2><%- __tr('Constructor') %></h2>
+
+<div class="contructor_wrap">
+
+	<div class="constructor_menu">
+		<ul>
+			<li>
+				<button type="button" class="add_item" data-type="gallery">+ Add gallery</button>
+			</li>
+			<li>
+				<button type="button" class="add_item" data-type="text">+ Add text</button>
+			</li>
+			<li>
+				<button type="button" class="add_item" data-type="video">+ Add youtube video</button>
+			</li>
+			<li>
+				<button type="button" class="add_item" data-type="header">+ Add header</button>
+			</li>
+		</ul>
+	</div>
+
+	<div class="constructor_body">
+		<% if (action === "update" && newsItem.floatContent) newsItem.floatContent.forEach((el, index) => { %>
+			<div class="constructor_item">
+				<div class="constructor_handle_wrap">
+					<div class="item_handle"></div>
+					<div class="item_delete" data-type="<%-el.contentType%>"></div>
+				</div>
+				<div class="constructor_content">
+					<input type="hidden" class="content_type_input" name="floatContent[<%-index%>][contentType]" value="<%=el.contentType%>" />
+
+					<% if (el.contentType === 'gallery') { %>
+						<%- include('./_gallery', {
+							gallery: el.gallery,
+							name: el.name,
+							index
+						}) %>
+					<%} else if (el.contentType === 'text') { %>
+						<%- include('./_text', {index, text: el.text}) %>
+					<%} else if (el.contentType === 'video') { %>
+						<%- include('./_video', {index, video: el.video}) %>
+					<%} else if (el.contentType === 'header') { %>
+						<%- include('./_header', {index, header: el.header}) %>
+					<%} %>
+
+				</div>
+			</div>
+		<%	}) %>
+	</div>
+	
+</div>

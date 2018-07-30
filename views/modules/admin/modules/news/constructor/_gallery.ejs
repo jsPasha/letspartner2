@@ -1,0 +1,24 @@
+<% locales.forEach((lang, i) => { %>	
+	<div class="form-group">
+		<label><%-__tr('Gallery_name')%> <%-lang%></label>
+		<input type="text" class="content_position_index" name="floatContent[<%-index%>][name][<%-lang%>]" value="<%=name[lang]%>">
+	</div>
+<% }); %>
+
+<div class="form-group form-group-image-pick">
+	<label><%-__tr('Gallery_image')%></label>
+	<input class="image_pick_multiple" data-id="<%-index%>" type="file" accept="image/" multiple>
+	<div class="images_box">		
+		<% 
+			gallery.forEach((el, i) => { %>
+				<div class="gallery_image" data-id="<%-i%>" data-url="<%-el%>">
+					<div class="image" style="background-image: url(/uploads<%-el%>)"></div>
+					<input type="hidden" class="hidden_image_url content_position_index" value="<%=el%>" name="floatContent[<%-index%>][gallery][]" />
+					<a class="update_image" href="#"><%-__tr('update_image')%></a>
+					<a class="delete_image" data-url="<%=el%>" href="#"><%-__tr('delete_image')%></a>
+				</div>
+			<% });
+		%>
+		<div class="add_gallery_image"></div>
+	</div>
+</div>

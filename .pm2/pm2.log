@@ -1,0 +1,285 @@
+[2018-07-23T15:49:44.296Z] PM2 log: ===============================================================================
+[2018-07-23T15:49:44.298Z] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+[2018-07-23T15:49:44.298Z] PM2 log: Time                 : Mon Jul 23 2018 15:49:44 GMT+0300 (EEST)
+[2018-07-23T15:49:44.299Z] PM2 log: PM2 version          : 3.0.0
+[2018-07-23T15:49:44.299Z] PM2 log: Node.js version      : 10.0.0
+[2018-07-23T15:49:44.299Z] PM2 log: Current arch         : x64
+[2018-07-23T15:49:44.299Z] PM2 log: PM2 home             : /var/www/dengivigoda/.pm2
+[2018-07-23T15:49:44.299Z] PM2 log: PM2 PID file         : /var/www/dengivigoda/.pm2/pm2.pid
+[2018-07-23T15:49:44.299Z] PM2 log: RPC socket file      : /var/www/dengivigoda/.pm2/rpc.sock
+[2018-07-23T15:49:44.299Z] PM2 log: BUS socket file      : /var/www/dengivigoda/.pm2/pub.sock
+[2018-07-23T15:49:44.300Z] PM2 log: Application log path : /var/www/dengivigoda/.pm2/logs
+[2018-07-23T15:49:44.300Z] PM2 log: Process dump file    : /var/www/dengivigoda/.pm2/dump.pm2
+[2018-07-23T15:49:44.300Z] PM2 log: Concurrent actions   : 2
+[2018-07-23T15:49:44.300Z] PM2 log: SIGTERM timeout      : 1600
+[2018-07-23T15:49:44.300Z] PM2 log: ===============================================================================
+[2018-07-23T15:49:44.451Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:44.455Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:47.129Z] PM2 log: App [server] with id [0] and pid [8290], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:47.132Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:47.136Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:47.235Z] PM2 log: App [server] with id [0] and pid [8329], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:47.237Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:47.239Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:47.337Z] PM2 log: App [server] with id [0] and pid [8337], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:47.339Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:47.340Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:47.474Z] PM2 log: App [server] with id [0] and pid [8344], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:47.476Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:47.478Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:47.578Z] PM2 log: App [server] with id [0] and pid [8355], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:47.580Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:47.582Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:47.692Z] PM2 log: App [server] with id [0] and pid [8362], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:47.694Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:47.696Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:47.800Z] PM2 log: App [server] with id [0] and pid [8368], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:47.802Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:47.804Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:47.903Z] PM2 log: App [server] with id [0] and pid [8374], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:47.906Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:47.908Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:48.004Z] PM2 log: App [server] with id [0] and pid [8380], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:48.006Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:48.008Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:48.118Z] PM2 log: App [server] with id [0] and pid [8386], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:48.120Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:48.122Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:48.221Z] PM2 log: App [server] with id [0] and pid [8392], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:48.223Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:48.224Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:48.319Z] PM2 log: App [server] with id [0] and pid [8398], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:48.321Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:48.323Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:48.417Z] PM2 log: App [server] with id [0] and pid [8404], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:48.417Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:48.419Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:48.513Z] PM2 log: App [server] with id [0] and pid [8410], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:48.515Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:48.517Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:48.608Z] PM2 log: App [server] with id [0] and pid [8416], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:48.610Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:48.612Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:48.705Z] PM2 log: App [server] with id [0] and pid [8422], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:48.706Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-23T15:49:48.708Z] PM2 log: App name:server id:0 online
+[2018-07-23T15:49:48.800Z] PM2 log: App [server] with id [0] and pid [8428], exited with code [1] via signal [SIGINT]
+[2018-07-23T15:49:48.800Z] PM2 log: Script /var/www/dengivigoda/dengivigoda.store/server.js had too many unstable restarts (16). Stopped. "errored"
+[2018-07-23T16:01:44.767Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-23T16:01:44.807Z] PM2 log: App name:index id:1 online
+[2018-07-23T19:33:16.610Z] PM2 log: Stopping app:index id:1
+[2018-07-23T19:33:16.708Z] PM2 log: App [index] with id [1] and pid [9295], exited with code [0] via signal [SIGINT]
+[2018-07-23T19:33:16.805Z] PM2 log: pid=9295 msg=process killed
+[2018-07-23T19:33:23.521Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-23T19:33:23.523Z] PM2 log: App name:index id:1 online
+[2018-07-23T19:48:20.394Z] PM2 log: Stopping app:index id:1
+[2018-07-23T19:48:20.403Z] PM2 log: App [index] with id [1] and pid [20736], exited with code [0] via signal [SIGINT]
+[2018-07-23T19:48:20.498Z] PM2 log: pid=20736 msg=process killed
+[2018-07-23T19:48:20.499Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-23T19:48:20.501Z] PM2 log: App name:index id:1 online
+[2018-07-25T10:04:33.280Z] PM2 log: Stopping app:index id:1
+[2018-07-25T10:04:33.386Z] PM2 log: App [index] with id [1] and pid [21477], exited with code [0] via signal [SIGINT]
+[2018-07-25T10:04:33.480Z] PM2 log: pid=21477 msg=process killed
+[2018-07-25T10:04:33.481Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T10:04:33.483Z] PM2 log: App name:index id:1 online
+[2018-07-25T10:04:51.303Z] PM2 log: Stopping app:index id:1
+[2018-07-25T10:04:51.313Z] PM2 log: App [index] with id [1] and pid [28427], exited with code [0] via signal [SIGINT]
+[2018-07-25T10:04:51.407Z] PM2 log: pid=28427 msg=process killed
+[2018-07-25T10:04:57.270Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T10:04:57.272Z] PM2 log: App name:index id:1 online
+[2018-07-25T10:07:49.832Z] PM2 log: Stopping app:server id:0
+[2018-07-25T10:07:49.833Z] PM2 error: app=server id=0 does not have a pid
+[2018-07-25T10:07:49.834Z] PM2 log: Stopping app:index id:1
+[2018-07-25T10:07:49.842Z] PM2 log: App [index] with id [1] and pid [28467], exited with code [0] via signal [SIGINT]
+[2018-07-25T10:07:49.938Z] PM2 log: pid=28467 msg=process killed
+[2018-07-25T11:08:55.367Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T11:08:55.369Z] PM2 log: App name:index id:1 online
+[2018-07-25T16:46:29.478Z] PM2 log: Stopping app:index id:1
+[2018-07-25T16:46:29.495Z] PM2 log: App [index] with id [1] and pid [32455], exited with code [0] via signal [SIGINT]
+[2018-07-25T16:46:29.590Z] PM2 log: pid=32455 msg=process killed
+[2018-07-25T16:46:38.083Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T16:46:38.085Z] PM2 log: App name:index id:1 online
+[2018-07-25T16:56:37.361Z] PM2 log: Stopping app:index id:1
+[2018-07-25T16:56:37.370Z] PM2 log: App [index] with id [1] and pid [31926], exited with code [0] via signal [SIGINT]
+[2018-07-25T16:56:37.466Z] PM2 log: pid=31926 msg=process killed
+[2018-07-25T16:56:38.713Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T16:56:38.715Z] PM2 log: App name:index id:1 online
+[2018-07-25T16:57:59.433Z] PM2 log: Stopping app:index id:1
+[2018-07-25T16:57:59.443Z] PM2 log: App [index] with id [1] and pid [32529], exited with code [0] via signal [SIGINT]
+[2018-07-25T16:57:59.538Z] PM2 log: pid=32529 msg=process killed
+[2018-07-25T16:58:42.291Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T16:58:42.293Z] PM2 log: App name:index id:1 online
+[2018-07-25T16:59:12.462Z] PM2 log: Stopping app:index id:1
+[2018-07-25T16:59:12.471Z] PM2 log: App [index] with id [1] and pid [32665], exited with code [0] via signal [SIGINT]
+[2018-07-25T16:59:12.567Z] PM2 log: pid=32665 msg=process killed
+[2018-07-25T17:06:21.189Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T17:06:21.191Z] PM2 log: App name:index id:1 online
+[2018-07-25T17:40:14.998Z] PM2 log: Stopping app:index id:1
+[2018-07-25T17:40:15.026Z] PM2 log: App [index] with id [1] and pid [1785], exited with code [0] via signal [SIGINT]
+[2018-07-25T17:40:15.122Z] PM2 log: pid=1785 msg=process killed
+[2018-07-25T17:40:28.077Z] PM2 log: PM2 successfully stopped
+[2018-07-25T17:40:29.123Z] PM2 log: ===============================================================================
+[2018-07-25T17:40:29.124Z] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+[2018-07-25T17:40:29.125Z] PM2 log: Time                 : Wed Jul 25 2018 17:40:29 GMT+0300 (EEST)
+[2018-07-25T17:40:29.125Z] PM2 log: PM2 version          : 3.0.2
+[2018-07-25T17:40:29.125Z] PM2 log: Node.js version      : 10.0.0
+[2018-07-25T17:40:29.125Z] PM2 log: Current arch         : x64
+[2018-07-25T17:40:29.125Z] PM2 log: PM2 home             : /var/www/dengivigoda/.pm2
+[2018-07-25T17:40:29.126Z] PM2 log: PM2 PID file         : /var/www/dengivigoda/.pm2/pm2.pid
+[2018-07-25T17:40:29.126Z] PM2 log: RPC socket file      : /var/www/dengivigoda/.pm2/rpc.sock
+[2018-07-25T17:40:29.126Z] PM2 log: BUS socket file      : /var/www/dengivigoda/.pm2/pub.sock
+[2018-07-25T17:40:29.126Z] PM2 log: Application log path : /var/www/dengivigoda/.pm2/logs
+[2018-07-25T17:40:29.126Z] PM2 log: Process dump file    : /var/www/dengivigoda/.pm2/dump.pm2
+[2018-07-25T17:40:29.126Z] PM2 log: Concurrent actions   : 2
+[2018-07-25T17:40:29.126Z] PM2 log: SIGTERM timeout      : 1600
+[2018-07-25T17:40:29.127Z] PM2 log: ===============================================================================
+[2018-07-25T17:40:29.141Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:29.143Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T17:40:29.146Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:29.150Z] PM2 log: App name:index id:1 online
+[2018-07-25T17:40:29.255Z] PM2 log: App [server] with id [0] and pid [5220], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:29.256Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:29.258Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:29.352Z] PM2 log: App [server] with id [0] and pid [5236], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:29.354Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:29.356Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:29.453Z] PM2 log: App [server] with id [0] and pid [5242], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:29.454Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:29.456Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:29.554Z] PM2 log: App [server] with id [0] and pid [5248], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:29.556Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:29.558Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:29.651Z] PM2 log: App [server] with id [0] and pid [5254], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:29.653Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:29.655Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:29.751Z] PM2 log: App [server] with id [0] and pid [5260], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:29.753Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:29.755Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:29.850Z] PM2 log: App [server] with id [0] and pid [5266], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:29.852Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:29.854Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:29.953Z] PM2 log: App [server] with id [0] and pid [5276], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:29.953Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:29.955Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:30.044Z] PM2 log: App [server] with id [0] and pid [5282], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:30.047Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:30.049Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:30.141Z] PM2 log: App [server] with id [0] and pid [5288], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:30.141Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:30.143Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:30.236Z] PM2 log: App [server] with id [0] and pid [5294], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:30.238Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:30.240Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:30.329Z] PM2 log: App [server] with id [0] and pid [5300], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:30.329Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:30.331Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:30.420Z] PM2 log: App [server] with id [0] and pid [5306], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:30.422Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:30.424Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:30.513Z] PM2 log: App [server] with id [0] and pid [5312], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:30.514Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:30.516Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:30.605Z] PM2 log: App [server] with id [0] and pid [5318], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:30.607Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-25T17:40:30.609Z] PM2 log: App name:server id:0 online
+[2018-07-25T17:40:30.698Z] PM2 log: App [server] with id [0] and pid [5324], exited with code [1] via signal [SIGINT]
+[2018-07-25T17:40:30.698Z] PM2 log: Script /var/www/dengivigoda/dengivigoda.store/server.js had too many unstable restarts (16). Stopped. "errored"
+[2018-07-25T17:40:39.860Z] PM2 log: Stopping app:index id:1
+[2018-07-25T17:40:39.870Z] PM2 log: App [index] with id [1] and pid [5225], exited with code [0] via signal [SIGINT]
+[2018-07-25T17:40:39.966Z] PM2 log: pid=5225 msg=process killed
+[2018-07-25T17:40:57.493Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T17:40:57.495Z] PM2 log: App name:index id:1 online
+[2018-07-25T17:49:32.845Z] PM2 log: Stopping app:index id:1
+[2018-07-25T17:49:32.855Z] PM2 log: App [index] with id [1] and pid [5354], exited with code [0] via signal [SIGINT]
+[2018-07-25T17:49:32.950Z] PM2 log: pid=5354 msg=process killed
+[2018-07-25T17:49:34.770Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T17:49:34.772Z] PM2 log: App name:index id:1 online
+[2018-07-25T18:07:19.425Z] PM2 log: Stopping app:index id:1
+[2018-07-25T18:07:19.444Z] PM2 log: App [index] with id [1] and pid [5774], exited with code [0] via signal [SIGINT]
+[2018-07-25T18:07:19.539Z] PM2 log: pid=5774 msg=process killed
+[2018-07-25T18:07:21.732Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T18:07:21.734Z] PM2 log: App name:index id:1 online
+[2018-07-25T23:38:34.812Z] PM2 log: Stopping app:index id:1
+[2018-07-25T23:38:34.885Z] PM2 log: App [index] with id [1] and pid [7091], exited with code [0] via signal [SIGINT]
+[2018-07-25T23:38:34.981Z] PM2 log: pid=7091 msg=process killed
+[2018-07-25T23:38:37.458Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-25T23:38:37.476Z] PM2 log: App name:index id:1 online
+[2018-07-26T09:59:48.360Z] PM2 log: Stopping app:index id:1
+[2018-07-26T09:59:48.456Z] PM2 log: App [index] with id [1] and pid [19956], exited with code [0] via signal [SIGINT]
+[2018-07-26T09:59:48.550Z] PM2 log: pid=19956 msg=process killed
+[2018-07-26T09:59:54.020Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-26T09:59:54.022Z] PM2 log: App name:index id:1 online
+[2018-07-26T12:18:40.179Z] PM2 log: Stopping app:server id:0
+[2018-07-26T12:18:40.194Z] PM2 error: app=server id=0 does not have a pid
+[2018-07-26T12:18:40.196Z] PM2 log: Stopping app:index id:1
+[2018-07-26T12:18:40.327Z] PM2 log: App [index] with id [1] and pid [12002], exited with code [0] via signal [SIGINT]
+[2018-07-26T12:18:40.422Z] PM2 log: pid=12002 msg=process killed
+[2018-07-26T12:19:03.334Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-26T12:19:03.337Z] PM2 log: App name:index id:1 online
+[2018-07-26T12:40:48.875Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:48.890Z] PM2 log: Stopping app:index id:1
+[2018-07-26T12:40:48.943Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:48.990Z] PM2 log: App [index] with id [1] and pid [21099], exited with code [0] via signal [SIGINT]
+[2018-07-26T12:40:49.085Z] PM2 log: pid=21099 msg=process killed
+[2018-07-26T12:40:49.086Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-26T12:40:49.089Z] PM2 log: App name:index id:1 online
+[2018-07-26T12:40:49.393Z] PM2 log: App [server] with id [0] and pid [22195], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:49.395Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:49.397Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:49.409Z] PM2 error: Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+[2018-07-26T12:40:49.494Z] PM2 log: App [server] with id [0] and pid [22207], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:49.495Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:49.497Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:49.598Z] PM2 log: App [server] with id [0] and pid [22213], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:49.599Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:49.601Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:49.697Z] PM2 log: App [server] with id [0] and pid [22219], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:49.699Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:49.701Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:49.794Z] PM2 log: App [server] with id [0] and pid [22225], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:49.795Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:49.797Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:49.909Z] PM2 log: App [server] with id [0] and pid [22231], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:49.911Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:49.913Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:50.005Z] PM2 log: App [server] with id [0] and pid [22237], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:50.007Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:50.009Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:50.101Z] PM2 log: App [server] with id [0] and pid [22243], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:50.103Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:50.105Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:50.196Z] PM2 log: App [server] with id [0] and pid [22249], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:50.198Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:50.200Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:50.296Z] PM2 log: App [server] with id [0] and pid [22255], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:50.298Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:50.300Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:50.398Z] PM2 log: App [server] with id [0] and pid [22261], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:50.399Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:50.401Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:50.501Z] PM2 log: App [server] with id [0] and pid [22267], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:50.503Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:50.505Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:50.609Z] PM2 log: App [server] with id [0] and pid [22273], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:50.610Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:50.612Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:50.721Z] PM2 log: App [server] with id [0] and pid [22279], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:50.723Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:50.725Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:50.828Z] PM2 log: App [server] with id [0] and pid [22285], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:50.829Z] PM2 log: Starting execution sequence in -fork mode- for app name:server id:0
+[2018-07-26T12:40:50.832Z] PM2 log: App name:server id:0 online
+[2018-07-26T12:40:50.937Z] PM2 log: App [server] with id [0] and pid [22291], exited with code [1] via signal [SIGINT]
+[2018-07-26T12:40:50.938Z] PM2 log: Script /var/www/dengivigoda/dengivigoda.store/server.js had too many unstable restarts (16). Stopped. "errored"
+[2018-07-26T12:40:56.577Z] PM2 log: Stopping app:server id:0
+[2018-07-26T12:40:56.577Z] PM2 error: app=server id=0 does not have a pid
+[2018-07-26T12:40:56.578Z] PM2 log: Stopping app:index id:1
+[2018-07-26T12:40:56.623Z] PM2 log: App [index] with id [1] and pid [22201], exited with code [0] via signal [SIGINT]
+[2018-07-26T12:40:56.684Z] PM2 log: pid=22201 msg=process killed
+[2018-07-26T12:41:04.173Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-26T12:41:04.176Z] PM2 log: App name:index id:1 online
+[2018-07-30T14:01:47.951Z] PM2 log: Stopping app:index id:1
+[2018-07-30T14:01:48.077Z] PM2 log: App [index] with id [1] and pid [22322], exited with code [0] via signal [SIGINT]
+[2018-07-30T14:01:48.145Z] PM2 log: pid=22322 msg=process killed
+[2018-07-30T14:01:57.120Z] PM2 log: Starting execution sequence in -fork mode- for app name:index id:1
+[2018-07-30T14:01:57.123Z] PM2 log: App name:index id:1 online

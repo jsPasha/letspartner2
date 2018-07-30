@@ -1,0 +1,25 @@
+<div class="page_head" style="background-image: url(/uploads<%=news.images.mainNewsImage%>)">
+	<h1><%- (user && user.role === 'admin') ? `<a style="display:block;margin-top: 20px" href="/${locale}/admin/news/update/${news.id}"><img height="30" src="/img/pencil.svg" width="24" alt=""></a>` : '' %><%-news.name[locale] || news.name[locales[0]]%></h1>
+	
+</div>
+
+<div class="container news_body">	
+
+	<p><%- news.description[locale] || news.description[locales[0]]%></p>
+
+	<% if (news.floatContent) news.floatContent.forEach((el, index) => { %>
+		<% if (el.contentType === 'gallery') { %>
+			<%- include('./_gallery', {
+				gallery: el.gallery,
+				name: el.name
+			}) %>
+		<%} else if (el.contentType === 'text') { %>
+			<%- include('./_text', {text: el.text}) %>
+		<%} else if (el.contentType === 'video') { %>
+			<%- include('./_video', {video: el.video}) %>
+		<%} else if (el.contentType === 'header') { %>
+			<%- include('./_header', {header: el.header}) %>
+		<%} %>
+	<%	}) %>
+
+</div>

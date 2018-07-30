@@ -1,0 +1,7 @@
+<div class="page_head" style="background-image: url(/uploads<%=pageHead.content.image%>)">
+	<h1><%- pageHead.content.name[locale] %></h1>
+	<p><%- pageHead.content.description[locale] %></p>
+	<a class="button blue_button" href="<%- user ? `/${locale}/profile/company/startup/create` : `/${locale}/login` %>">Стать частью LET'S PARTNER</a>
+</div>
+
+<%- include('_list') %>

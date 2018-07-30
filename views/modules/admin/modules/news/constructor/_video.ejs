@@ -1,0 +1,23 @@
+<%
+	const thumbnails = JSON.parse(video.api.thumbnails);
+	const thumb = thumbnails.standard || thumbnails.high || thumbnails.medium;
+	const thumbUrl = thumb ? thumb.url : "";
+%>
+
+<%-video.api.trumbnails%>
+<div class="form-group">
+	<label><%-__tr("Video")%></label>
+
+	<input type="text" class="video_link" data-id="<%-video.id%>" value="<%=video.pastedUrl%>" />
+	<input type="hidden" class="content_position_index video_pasted_url" name="floatContent[<%-index%>][video][pastedUrl]" value="<%=video.pastedUrl%>" />
+	<input type="hidden" class="content_position_index video_id" name="floatContent[<%-index%>][video][id]" value="<%=video.id%>" />
+	<input type="hidden" class="content_position_index video_api_title" name="floatContent[<%-index%>][video][api][title]" value="<%=video.api.title%>" />
+
+	<input type="hidden" class="content_position_index video_api_thumbnails" name="floatContent[<%-index%>][video][api][thumbnails]" value="<%=video.api.thumbnails%>" />
+
+	<div class="video_block">		
+		<img src="<%-thumbUrl || ''%>" alt="">
+		<h2><%-video.api.title%></h2>
+	</div>
+
+</div>

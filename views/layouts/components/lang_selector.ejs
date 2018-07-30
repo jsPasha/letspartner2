@@ -1,0 +1,5 @@
+<ul class="lang_selector">
+	<% locales.forEach(lang => { %>
+		<li <% if (locale === lang) { %>class="active"<%} %>><a href="/<%-lang%><%- url %>"><%-lang%></a></li>
+	<% }); %>	
+</ul>

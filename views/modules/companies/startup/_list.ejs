@@ -1,0 +1,67 @@
+<%
+    const getDesctiption = (company) => {
+        if (company.idea) {
+            return company.idea.substring(0,100) + '...';
+        }
+    };    
+%>
+
+<div class="container">
+    <div class="list_item_wrap">
+        <div class="page_<%-type%>_list">
+           
+            <% for (var i = 0; i < companies.length; i++) { %>
+                <a style="background-image: url(/uploads<%-companies[i].images.thumb%>);" href="/<%-locale%>/companies/<%-type%>/<%-companies[i].createdAt%>/<%-companies[i].alias%>">
+                    <div>
+                        <p><%- companies[i].tags ? companies[i].tags.map((el) => ` #${el}`) : '' %></p>
+                        <p class="center"><b><%- companies[i].name[locale] || companies[i].name[locales[0]] %></b></p>
+                        <p class="center"><%- getDesctiption(companies[i]) %></p>
+                        <p class="center">
+                            <% lists.forEach((item) => {
+                                if (item.type === 'activities' && item.alias === companies[i].activity) { %>
+                                    <%- item.name[locale] + ', ' %>
+                            <% }}) %>
+                            <%- companies[i].stages.map((item) => {
+                                for (let i = 0; i < lists.length; i++) {
+                                    if (lists[i].type === 'stages' && lists[i].alias === item) return lists[i].name[locale]
+                                }
+                            }).join(', ') %>
+                        </p>
+                    </div>
+                    <img src="/uploads<%-companies[i].images.logo%>" alt="">
+                </a>
+            <% } %>
+        </div>
+
+            <% if (pages > 1) { %>
+                <ul class="pagination text-center">
+                    <% if (current == 1) { %>
+                        <li class="disabled"><a>First</a></li>
+                    <% } else { %>
+                        <li><a href="/<%- locale  %>/companies/<%-type%>/1">First</a></li>
+                    <% } %>
+                    
+                    <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+                    <% if (i !== 1) { %>
+                    <li class="disabled"><a>...</a></li>
+                    <% } %>
+                    <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+                    <% if (i == current) { %>
+                    <li class="active"><a><%= i %></a></li>
+                    <% } else { %>
+                    <li><a href="/<%- locale  %>/companies/<%-type%>/<%= i %>"><%= i %></a></li>
+                    <% } %>
+                    <% if (i == Number(current) + 4 && i < pages) { %>
+                    <li class="disabled"><a>...</a></li>
+                    <% } %>
+                    <% } %>
+                    <% if (current == pages) { %>
+                    <li class="disabled"><a>Last</a></li>
+                    <% } else { %>
+                    <li><a href="/<%- locale  %>/companies/<%-type%>/<%= pages %>">Last</a></li>
+                    <% } %>
+                </ul>
+            <% } %>
+
+    </div>
+</div>

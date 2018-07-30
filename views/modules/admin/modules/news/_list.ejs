@@ -1,0 +1,52 @@
+<div class="list_item_wrap admin_news_list">      
+ 
+            <% for (var i = 0; i < news.length; i++) { %>
+                <div class="item">
+                    <div>
+                        <p><a href="/<%-locale%>/news/page/<%-news[i].createdAt%>/<%-news[i].alias%>"><%- news[i].name[locale] || news[i].name[locales[0]] %></a></p>
+                        <p><%-news[i].moment%></p>
+                    </div>
+                    <div class="control">
+                        <p>
+                            <label>
+                                <input type="checkbox" class="state_checkbox" data-state="published" data-model="news" data-id="<%-news[i].id%>" <%- news[i].published ? 'checked=""' : '' %>>
+                                <span><%-__tr('Publish')%></span>
+                            </label>
+                        </p>
+                        <a href="/<%-locale%>/admin/news/update/<%- news[i].id %>"><img src="/img/pencil.svg" alt=""></a>
+                        <a class="confirm" href="/action/news/delete/<%- news[i].id %>"><img src="/img/delete.svg" alt=""></a>
+                    </div>
+                </div>
+            <% } %>        
+
+        <% if (pages > 1) { %>
+        <ul class="pagination text-center">
+            <% if (current == 1) { %>
+                <li class="disabled"><a>First</a></li>
+            <% } else { %>
+                <li><a href="/<%-locale%>/admin/news/1">First</a></li>
+            <% } %>
+            
+            <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+            <% if (i !== 1) { %>
+            <li class="disabled"><a>...</a></li>
+            <% } %>
+            <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+            <% if (i == current) { %>
+            <li class="active"><a><%= i %></a></li>
+            <% } else { %>
+            <li><a href="/<%- locale  %>/admin/news/<%= i %>"><%= i %></a></li>
+            <% } %>
+            <% if (i == Number(current) + 4 && i < pages) { %>
+            <li class="disabled"><a>...</a></li>
+            <% } %>
+            <% } %>
+            <% if (current == pages) { %>
+            <li class="disabled"><a>Last</a></li>
+            <% } else { %>
+            <li><a href="/<%- locale  %>/admin/news/<%= pages %>">Last</a></li>
+            <% } %>
+      </ul>
+      <% } %>
+
+   </div>

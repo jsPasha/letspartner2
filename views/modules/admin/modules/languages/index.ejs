@@ -1,0 +1,24 @@
+<div class="container profile_section">
+	
+	<h1><%- __tr("Languages_settings") %></h1>
+	
+	<div class="admin_block">
+		
+		<%- include('../../menu') %>
+		
+		<form id="languages_page" v-on:submit.prevent="submit">
+			<div v-for="(item, key) in constants" class="constants_wrap">
+				<div class="const_label const_item">				
+					<p>{{item.key}}</p>	
+				</div>
+				<div class="const_item const_block" v-for="(value, i) in item.value">
+					<label>{{i}}</label>
+					<textarea :class=`textarea${key}` :data-name=`constants[${item.key}].value[${i}]` v-on:change="setNameAttr(key)" v-model="constants[key].value[i]">{{value}}</textarea>
+				</div>
+			</div>
+			<div class="center">
+				<button type="submit" class="button blue_button fixed_button"><%- __tr("Submit") %></button>
+			</div>
+		</form>
+	</div>
+</div>

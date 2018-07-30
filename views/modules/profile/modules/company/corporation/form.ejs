@@ -1,0 +1,198 @@
+<%
+const update = action === 'update';
+%>
+
+<div v-show="activePart == 'info'" class="company_form_items">
+
+	<form method="POST" class="<%-action%>_form <%- admin ? 'ajax_form' : '' %>" action="/action/<%- admin ? 'admin/' : '' %>company/<%- type %>/<%- update ? `update/${obj.id}` : 'create' %>">
+
+		<% if (!admin) { %>
+			<div class="button_checkbox">
+				<label class="draft">
+					<span><%- __tr("Send_as_draft") %></span>
+					<input type="radio" v-on:change="submit" name="status" value="draft">
+				</label>
+				<label class="moderation">
+					<span><%- __tr("Send_to_moderation") %></span>
+					<input type="radio" checked v-on:click="submit" name="status" value="moderation">
+				</label>
+			</div>
+		<% } %>
+
+		<div class="form_block">
+
+			<h2><%- __tr("Images") %></h2>
+
+			<div class="form-group form-group-image-pick">
+				<label><%- __tr("Logo") %></label>
+				<div class="image_pick_area<%- (update && obj.images.logo) ? ' active' : '' %>">
+					<input class="image_pick" type="file" accept="image/">
+					<div class="cropped_image_view">
+						<%-(update && obj.images.logo) ? `<img src="/uploads${obj.images.logo}">` : ''%>
+					</div>
+					<input type="hidden" class="hidden_image_url" value="<%=(update && obj.images.logo) ? obj.images.logo : ''%>" name="images[logo]" />
+					<a class="upload_new_image" data-del-url="<%-update ? obj.images.logo : ''%>" href="#"><%- __tr("upload_new_image") %></a>
+					<a class="delete_image" data-url="<%-update ? obj.images.logo : ''%>" href="#"><%- __tr("delete_image") %></a>
+				</div>
+			</div>
+
+			<div class="form-group form-group-image-pick">
+				<label><%- __tr("Thumb") %></label>
+				<div class="image_pick_area<%- (update && obj.images.thumb) ? ' active' : '' %>">
+					<input class="image_pick" data-ratio="16:9" type="file" accept="image/">
+					<div class="cropped_image_view">
+						<%-(update && obj.images.thumb) ? `<img src="/uploads${obj.images.thumb}">` : ''%>
+					</div>
+					<input type="hidden" class="hidden_image_url" value="<%=(update && obj.images.thumb) ? obj.images.thumb : ''%>" name="images[thumb]" />
+					<a class="upload_new_image" data-del-url="<%-update ? obj.images.thumb : ''%>" href="#"><%- __tr("upload_new_image") %></a>
+					<a class="delete_image" data-url="<%-update ? obj.images.thumb : ''%>" href="#"><%- __tr("delete_image") %></a>
+				</div>
+			</div>
+
+			<div class="form-group form-group-image-pick">
+				<label><%- __tr("Main") %></label>
+				<div class="image_pick_area<%- (action === 'update' && obj.images.main) ? ' active' : '' %>">
+					<input class="image_pick" data-ratio="16:9" type="file" accept="image/">
+					<div class="cropped_image_view">
+						<%-(action === 'update' && obj.images.main) ? `<img src="/uploads${obj.images.main}">` : ''%>
+					</div>
+					<input type="hidden" class="hidden_image_url" value="<%=(action === 'update' && obj.images.main) ? obj.images.main : ''%>" name="images[main]" />
+					<a class="upload_new_image" data-del-url="<%-action === 'update' ? obj.images.main : ''%>" href="#"><%- __tr("upload_new_image") %></a>
+					<a class="delete_image" data-url="<%-action === 'update' ? obj.images.main : ''%>" href="#"><%- __tr("delete_image") %></a>
+				</div>
+			</div>
+		</div>
+		<div>
+
+			<div class="form_block">
+				<h2>На каком языке я хочу описать компанию</h2>
+				<p>Сайт мультиязычный. Представленный на украинском, английском, русском языках.</p>
+				<div class="radiobuttons">
+					<% locales.forEach((el, i) => { %>
+						<label>
+						<input type="checkbox" :required="!description_lang.length ? true : false" name="description_lang[]" v-model="description_lang" value="<%-el%>" <%- (update && obj.description_lang.includes(el)) ? 'checked' : '' %>>
+						<span><%-el%></span>
+						</label>
+						<% }); %>
+					</div>
+				</div>
+
+				<div v-show="description_lang.length > 0">
+
+					<div class="form_block">
+						<h2><%- __tr("Name") %></h2>
+						<% locales.forEach((lang, i) => { %>
+							<div class="form-group">
+								<label for="name_<%-lang%>"><%- __tr("Name") %> <%-lang%> <b style="color: #ee6e73" v-if="description_lang.includes('<%-lang%>')">*</b></label>
+								<textarea maxlength="200" :required="description_lang.includes('<%-lang%>') ? true : false" id="name_<%-lang%>" name="name[<%-lang%>]" rows="2"><%- update ? obj.name[lang] : '' %></textarea>
+							</div>
+						<% }); %>
+					</div>
+
+					<div class="form_block">
+						<h2><%- __tr("Contacts") %></h2>
+						<div class="form-group">
+							<label for="phone"><%- __tr("Phone") %></label>
+							<input id="phone" name="phones[]" type="tel" value="<%- update ? obj.phones[0] : '' %>" />
+						</div>
+						<div class="form-group">
+							<label for="website"><%- __tr("website") %></label>
+							<input id="website" name="social[website]" type="text" value="<%- update ? obj.social.website : '' %>"/>
+						</div>
+
+						<div class="form-group">
+							<label for="facebook">Facebook</label>
+							<input id="facebook" name="social[facebook]" type="text" value="<%- update ? obj.social.facebook : '' %>"/>
+						</div>
+
+						<div class="form-group">
+							<label for="linkedin">LinkedIn</label>
+							<input id="linkedin" name="social[linkedin]" type="text" value="<%- update ? obj.social.linkedin : '' %>"/>
+						</div>
+					</div>
+					
+					<div class="form-group choosen_wrap form_block">
+						<h2><%- __tr('directions') %></h2>
+						<select class="choosen_select" name="directions" multiple>
+							<% lists.forEach((el) => {
+								if (el.type == 'directions') { %>
+									<option <%- update && obj.directions.includes(el.alias) ? 'selected' : '' %> value="<%-el.alias%>"><%- el.name[locale] %></option>
+								<% }
+							}); %>
+						</select>
+					</div>	
+
+					<div class="form_block"> 
+						<h2>О том, в какие проекты интересно</h2>
+						<div class="form-group choosen_wrap">
+							<label>ОБЛАСТЬ ДЕЯТЕЛЬНОСТИ СТАРТАПА</label>	
+							<select class="choosen_select" name="activity">
+								<% lists.forEach((el) => {
+									if (el.type == 'activities') { %>
+										<option <%- update &&  obj.activity === el.alias ? 'selected' : '' %> value="<%-el.alias%>"><%- el.name[locale] %></option>
+									<% }
+								}); %>
+							</select>
+						</div>
+						<div class="form-group choosen_wrap">
+							<label>Стадии стартапа с которым интересно работать</label>	
+							<select class="choosen_select" name="stages" multiple>
+								<% lists.forEach((el) => {
+									if (el.type == 'stages') { %>
+										<option <%- update && obj.stages.includes(el.alias) ? 'selected' : '' %> value="<%-el.alias%>"><%- el.name[locale] %></option>
+									<% }
+								}); %>
+							</select>
+						</div>	
+
+						<% locales.forEach((lang, i) => { %>
+							<div class="form-group">
+								<label>Коротко о проекте который ищу <%- lang %></label>
+								<textarea name="description[<%- lang %>]" rows="6"><%- update ? obj.description[lang] : '' %></textarea>
+							</div>
+						<% }); %>
+
+					</div>
+				
+					<div class="form_block">
+						<h2>Гарячые проблемы, задачи</h2>
+						<div class="form-group">
+							<textarea name="problems" rows="6"><%- update ? obj.problems : '' %></textarea>
+						</div>
+					</div>
+
+					<div class="form_block">
+						<h2>Теги для поиска</h2>		
+						<input class="selectized" value="<%- update && obj.tags ? obj.tags.join(',') : '' %>" name="tags" />
+					</div>
+
+				</div>
+
+					<% if (admin) { %>
+						<div class="form_block">
+							<div class="form-group">
+								<label>Что не так, что нужно изменить чтобы пройти модерацию, или рекомендуем улучшить</label>
+								<textarea name="admin_message[reject]"><%- (obj.admin_message && obj.admin_message.reject) ?  obj.admin_message.reject : '' %></textarea>
+							</div>
+							
+							<div class="button_checkbox admin_button_checkbox">
+								<label class="published">
+									<span><%- __tr("Confirm") %></span>
+									<input type="radio" v-on:click="ajaxSubmit" name="status" value="published">
+								</label>
+								<label class="reject">
+									<span><%- __tr("Reject") %></span>
+									<input type="radio" v-on:click="ajaxSubmit" name="status" value="reject">
+								</label>
+							</div>
+						</div>
+					<% } else { %>
+<div class="center">
+						<input type="submit" value="<%- __tr('Send_to_moderation') %>">
+						</div>
+					<% } %>
+
+				</div>
+			</div>
+
+		</form>

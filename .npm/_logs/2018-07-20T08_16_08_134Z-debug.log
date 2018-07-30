@@ -1,0 +1,1420 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'pm2',
+1 verbose cli   'install-local' ]
+2 info using npm@5.6.0
+3 info using node@v10.0.0
+4 verbose npm-session b01b2b3c79c5e804
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 304 https://registry.npmjs.org/pm2 240ms (from cache)
+8 silly pacote tag manifest for pm2@latest fetched in 440ms
+9 http fetch GET 200 https://registry.npmjs.org/install-local 959ms
+10 silly pacote tag manifest for install-local@latest fetched in 990ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 silly install loadShrinkwrap
+14 silly install loadAllDepsIntoIdealTree
+15 silly resolveWithNewModule pm2@3.0.0 checking installable status
+16 silly resolveWithNewModule install-local@0.6.0 checking installable status
+17 http fetch GET 200 https://registry.npmjs.org/lodash 72ms
+18 http fetch GET 200 https://registry.npmjs.org/mz 92ms
+19 silly pacote range manifest for lodash@^4.17.10 fetched in 100ms
+20 silly resolveWithNewModule lodash@4.17.10 checking installable status
+21 http fetch GET 200 https://registry.npmjs.org/uniqid 109ms
+22 silly pacote range manifest for mz@^2.7.0 fetched in 113ms
+23 silly resolveWithNewModule mz@2.7.0 checking installable status
+24 http fetch GET 304 https://registry.npmjs.org/rimraf 117ms (from cache)
+25 silly pacote range manifest for rimraf@^2.6.2 fetched in 139ms
+26 silly resolveWithNewModule rimraf@2.6.2 checking installable status
+27 silly pacote range manifest for uniqid@^5.0.3 fetched in 143ms
+28 silly resolveWithNewModule uniqid@5.0.3 checking installable status
+29 http fetch GET 200 https://registry.npmjs.org/any-promise 45ms
+30 silly pacote range manifest for any-promise@^1.0.0 fetched in 47ms
+31 silly resolveWithNewModule any-promise@1.3.0 checking installable status
+32 http fetch GET 200 https://registry.npmjs.org/thenify-all 57ms
+33 http fetch GET 304 https://registry.npmjs.org/object-assign 68ms (from cache)
+34 silly pacote range manifest for thenify-all@^1.0.0 fetched in 69ms
+35 silly resolveWithNewModule thenify-all@1.6.0 checking installable status
+36 silly pacote range manifest for object-assign@^4.0.1 fetched in 70ms
+37 silly resolveWithNewModule object-assign@4.1.1 checking installable status
+38 http fetch GET 200 https://registry.npmjs.org/thenify 26ms
+39 silly pacote range manifest for thenify@>= 3.1.0 < 4 fetched in 37ms
+40 silly resolveWithNewModule thenify@3.3.0 checking installable status
+41 http fetch GET 304 https://registry.npmjs.org/glob 36ms (from cache)
+42 silly pacote range manifest for glob@^7.0.5 fetched in 48ms
+43 silly resolveWithNewModule glob@7.1.2 checking installable status
+44 http fetch GET 304 https://registry.npmjs.org/fs.realpath 82ms (from cache)
+45 http fetch GET 304 https://registry.npmjs.org/inherits 82ms (from cache)
+46 http fetch GET 304 https://registry.npmjs.org/once 91ms (from cache)
+47 silly pacote range manifest for fs.realpath@^1.0.0 fetched in 96ms
+48 silly resolveWithNewModule fs.realpath@1.0.0 checking installable status
+49 http fetch GET 304 https://registry.npmjs.org/path-is-absolute 108ms (from cache)
+50 silly pacote range manifest for path-is-absolute@^1.0.0 fetched in 109ms
+51 silly resolveWithNewModule path-is-absolute@1.0.1 checking installable status
+52 http fetch GET 304 https://registry.npmjs.org/minimatch 111ms (from cache)
+53 silly pacote range manifest for minimatch@^3.0.4 fetched in 123ms
+54 silly resolveWithNewModule minimatch@3.0.4 checking installable status
+55 silly pacote range manifest for once@^1.3.0 fetched in 130ms
+56 silly resolveWithNewModule once@1.4.0 checking installable status
+57 silly pacote range manifest for inherits@2 fetched in 144ms
+58 silly resolveWithNewModule inherits@2.0.3 checking installable status
+59 http fetch GET 304 https://registry.npmjs.org/inflight 171ms (from cache)
+60 silly pacote range manifest for inflight@^1.0.4 fetched in 182ms
+61 silly resolveWithNewModule inflight@1.0.6 checking installable status
+62 http fetch GET 304 https://registry.npmjs.org/wrappy 16ms (from cache)
+63 silly pacote range manifest for wrappy@1 fetched in 17ms
+64 silly resolveWithNewModule wrappy@1.0.2 checking installable status
+65 http fetch GET 304 https://registry.npmjs.org/brace-expansion 52ms (from cache)
+66 silly pacote range manifest for brace-expansion@^1.1.7 fetched in 52ms
+67 silly resolveWithNewModule brace-expansion@1.1.11 checking installable status
+68 http fetch GET 304 https://registry.npmjs.org/concat-map 25ms (from cache)
+69 silly pacote version manifest for concat-map@0.0.1 fetched in 42ms
+70 silly resolveWithNewModule concat-map@0.0.1 checking installable status
+71 http fetch GET 304 https://registry.npmjs.org/balanced-match 45ms (from cache)
+72 silly pacote range manifest for balanced-match@^1.0.0 fetched in 52ms
+73 silly resolveWithNewModule balanced-match@1.0.0 checking installable status
+74 http fetch GET 200 https://registry.npmjs.org/commander 128ms
+75 silly pacote version manifest for commander@2.15.1 fetched in 131ms
+76 silly resolveWithNewModule commander@2.15.1 checking installable status
+77 http fetch GET 304 https://registry.npmjs.org/async 134ms (from cache)
+78 http fetch GET 304 https://registry.npmjs.org/coffee-script 161ms (from cache)
+79 http fetch GET 304 https://registry.npmjs.org/blessed 190ms (from cache)
+80 silly pacote range manifest for async@^2.6.1 fetched in 191ms
+81 silly resolveWithNewModule async@2.6.1 checking installable status
+82 http fetch GET 304 https://registry.npmjs.org/chalk 192ms (from cache)
+83 silly pacote range manifest for coffee-script@^1.12.7 fetched in 194ms
+84 warn deprecated coffee-script@1.12.7: CoffeeScript on NPM has moved to "coffeescript" (no hyphen)
+85 silly resolveWithNewModule coffee-script@1.12.7 checking installable status
+86 http fetch GET 304 https://registry.npmjs.org/chokidar 231ms (from cache)
+87 silly pacote range manifest for chalk@^2.4.1 fetched in 236ms
+88 silly resolveWithNewModule chalk@2.4.1 checking installable status
+89 silly pacote range manifest for blessed@^0.1.81 fetched in 240ms
+90 silly resolveWithNewModule blessed@0.1.81 checking installable status
+91 silly pacote range manifest for chokidar@^2.0.4 fetched in 258ms
+92 silly resolveWithNewModule chokidar@2.0.4 checking installable status
+93 http fetch GET 304 https://registry.npmjs.org/cron 131ms (from cache)
+94 http fetch GET 304 https://registry.npmjs.org/debug 87ms (from cache)
+95 http fetch GET 200 https://registry.npmjs.org/moment 19ms
+96 silly pacote range manifest for cron@^1.3 fetched in 160ms
+97 silly resolveWithNewModule cron@1.3.0 checking installable status
+98 silly pacote range manifest for debug@^3.1 fetched in 106ms
+99 silly resolveWithNewModule debug@3.1.0 checking installable status
+100 http fetch GET 304 https://registry.npmjs.org/eventemitter2 102ms (from cache)
+101 silly pacote range manifest for moment@^2.22.2 fetched in 43ms
+102 silly resolveWithNewModule moment@2.22.2 checking installable status
+103 http fetch GET 304 https://registry.npmjs.org/mkdirp 91ms (from cache)
+104 silly pacote version manifest for eventemitter2@5.0.1 fetched in 143ms
+105 silly resolveWithNewModule eventemitter2@5.0.1 checking installable status
+106 silly pacote version manifest for mkdirp@0.5.1 fetched in 116ms
+107 silly resolveWithNewModule mkdirp@0.5.1 checking installable status
+108 http fetch GET 304 https://registry.npmjs.org/fclone 123ms (from cache)
+109 silly pacote version manifest for fclone@1.0.11 fetched in 154ms
+110 silly resolveWithNewModule fclone@1.0.11 checking installable status
+111 http fetch GET 304 https://registry.npmjs.org/needle 98ms (from cache)
+112 http fetch GET 304 https://registry.npmjs.org/nssocket 96ms (from cache)
+113 silly pacote range manifest for needle@^2.2.1 fetched in 101ms
+114 silly resolveWithNewModule needle@2.2.1 checking installable status
+115 http fetch GET 304 https://registry.npmjs.org/pm2-axon 63ms (from cache)
+116 http fetch GET 304 https://registry.npmjs.org/pidusage 100ms (from cache)
+117 silly pacote version manifest for nssocket@0.6.0 fetched in 106ms
+118 silly resolveWithNewModule nssocket@0.6.0 checking installable status
+119 silly pacote version manifest for pm2-axon@3.3.0 fetched in 85ms
+120 silly resolveWithNewModule pm2-axon@3.3.0 checking installable status
+121 silly pacote range manifest for pidusage@^2.0.6 fetched in 122ms
+122 silly resolveWithNewModule pidusage@2.0.12 checking installable status
+123 http fetch GET 304 https://registry.npmjs.org/pm2-deploy 69ms (from cache)
+124 http fetch GET 304 https://registry.npmjs.org/pm2-axon-rpc 107ms (from cache)
+125 silly pacote range manifest for pm2-deploy@^0.3.9 fetched in 89ms
+126 silly resolveWithNewModule pm2-deploy@0.3.10 checking installable status
+127 silly pacote range manifest for pm2-axon-rpc@^0.5.1 fetched in 124ms
+128 silly resolveWithNewModule pm2-axon-rpc@0.5.1 checking installable status
+129 http fetch GET 200 https://registry.npmjs.org/semver 71ms
+130 http fetch GET 304 https://registry.npmjs.org/pm2-multimeter 105ms (from cache)
+131 silly pacote range manifest for semver@^5.5 fetched in 77ms
+132 silly resolveWithNewModule semver@5.5.0 checking installable status
+133 http fetch GET 304 https://registry.npmjs.org/promptly 101ms (from cache)
+134 http fetch GET 200 https://registry.npmjs.org/sprintf-js 28ms
+135 silly pacote range manifest for pm2-multimeter@^0.1.2 fetched in 117ms
+136 silly resolveWithNewModule pm2-multimeter@0.1.2 checking installable status
+137 silly pacote version manifest for sprintf-js@1.1.1 fetched in 34ms
+138 silly resolveWithNewModule sprintf-js@1.1.1 checking installable status
+139 silly pacote range manifest for promptly@^2 fetched in 118ms
+140 silly resolveWithNewModule promptly@2.2.0 checking installable status
+141 http fetch GET 304 https://registry.npmjs.org/shelljs 110ms (from cache)
+142 http fetch GET 200 https://registry.npmjs.org/v8-compile-cache 42ms
+143 http fetch GET 304 https://registry.npmjs.org/source-map-support 65ms (from cache)
+144 silly pacote range manifest for v8-compile-cache@^2.0.0 fetched in 45ms
+145 silly resolveWithNewModule v8-compile-cache@2.0.0 checking installable status
+146 silly pacote range manifest for shelljs@~0.8.2 fetched in 132ms
+147 silly resolveWithNewModule shelljs@0.8.2 checking installable status
+148 http fetch GET 304 https://registry.npmjs.org/vizion 47ms (from cache)
+149 http fetch GET 304 https://registry.npmjs.org/yamljs 55ms (from cache)
+150 silly pacote range manifest for source-map-support@^0.5.6 fetched in 100ms
+151 silly resolveWithNewModule source-map-support@0.5.6 checking installable status
+152 silly pacote range manifest for yamljs@^0.3.0 fetched in 67ms
+153 silly resolveWithNewModule yamljs@0.3.0 checking installable status
+154 silly pacote range manifest for vizion@~0.2.0 fetched in 77ms
+155 silly resolveWithNewModule vizion@0.2.13 checking installable status
+156 http fetch GET 304 https://registry.npmjs.org/cli-table-redemption 777ms (from cache)
+157 silly pacote range manifest for cli-table-redemption@^1.0.0 fetched in 777ms
+158 silly resolveWithNewModule cli-table-redemption@1.0.1 checking installable status
+159 http fetch GET 304 https://tgz.pm2.io/gkt-1.0.0.tgz 291ms (from cache)
+160 silly pacote remote manifest for gkt@https://tgz.pm2.io/gkt-1.0.0.tgz fetched in 316ms
+161 silly resolveWithNewModule gkt@1.0.0 checking installable status
+162 http fetch GET 304 https://registry.npmjs.org/@pm2%2fjs-api 931ms (from cache)
+163 silly pacote range manifest for @pm2/js-api@^0.5.15 fetched in 936ms
+164 silly resolveWithNewModule @pm2/js-api@0.5.21 checking installable status
+165 http fetch GET 304 https://registry.npmjs.org/@pm2%2fagent 952ms (from cache)
+166 silly pacote range manifest for @pm2/agent@^0.5.4 fetched in 965ms
+167 silly resolveWithNewModule @pm2/agent@0.5.10 checking installable status
+168 http fetch GET 200 https://registry.npmjs.org/@pm2%2fio 1016ms
+169 silly pacote range manifest for @pm2/io@^2.0.2 fetched in 1018ms
+170 silly resolveWithNewModule @pm2/io@2.1.0 checking installable status
+171 http fetch GET 304 https://registry.npmjs.org/handy-http 43ms (from cache)
+172 http fetch GET 304 https://registry.npmjs.org/ws 44ms (from cache)
+173 silly pacote range manifest for ws@^5.1.0 fetched in 58ms
+174 silly resolveWithNewModule ws@5.2.2 checking installable status
+175 silly pacote range manifest for handy-http@^1.0.2 fetched in 60ms
+176 silly resolveWithNewModule handy-http@1.0.2 checking installable status
+177 silly pacote range manifest for eventemitter2@~0.4.14 fetched in 11ms
+178 silly resolveWithNewModule eventemitter2@0.4.14 checking installable status
+179 http fetch GET 304 https://registry.npmjs.org/lazy 20ms (from cache)
+180 silly pacote range manifest for lazy@~1.0.11 fetched in 21ms
+181 silly resolveWithNewModule lazy@1.0.11 checking installable status
+182 http fetch GET 304 https://registry.npmjs.org/escape-regexp 24ms (from cache)
+183 http fetch GET 304 https://registry.npmjs.org/amp 28ms (from cache)
+184 silly pacote range manifest for amp@~0.3.1 fetched in 29ms
+185 silly resolveWithNewModule amp@0.3.1 checking installable status
+186 http fetch GET 304 https://registry.npmjs.org/amp-message 33ms (from cache)
+187 silly pacote version manifest for escape-regexp@0.0.1 fetched in 40ms
+188 silly resolveWithNewModule escape-regexp@0.0.1 checking installable status
+189 silly pacote range manifest for amp-message@~0.1.1 fetched in 47ms
+190 silly resolveWithNewModule amp-message@0.1.2 checking installable status
+191 http fetch GET 200 https://registry.npmjs.org/ms 15ms
+192 silly pacote version manifest for ms@2.0.0 fetched in 16ms
+193 silly resolveWithNewModule ms@2.0.0 checking installable status
+194 http fetch GET 200 https://registry.npmjs.org/async-limiter 9ms
+195 silly pacote range manifest for async-limiter@~1.0.0 fetched in 23ms
+196 silly resolveWithNewModule async-limiter@1.0.0 checking installable status
+197 http fetch GET 200 https://registry.npmjs.org/event-loop-inspector 40ms
+198 http fetch GET 200 https://registry.npmjs.org/signal-exit 39ms
+199 http fetch GET 200 https://registry.npmjs.org/json-stringify-safe 42ms
+200 silly pacote version manifest for signal-exit@3.0.2 fetched in 44ms
+201 silly resolveWithNewModule signal-exit@3.0.2 checking installable status
+202 http fetch GET 304 https://registry.npmjs.org/deepmerge 47ms (from cache)
+203 http fetch GET 304 https://registry.npmjs.org/vxx 48ms (from cache)
+204 silly pacote version manifest for event-loop-inspector@1.0.1 fetched in 51ms
+205 silly resolveWithNewModule event-loop-inspector@1.0.1 checking installable status
+206 silly pacote version manifest for deepmerge@2.1.1 fetched in 51ms
+207 silly resolveWithNewModule deepmerge@2.1.1 checking installable status
+208 silly pacote version manifest for json-stringify-safe@5.0.1 fetched in 51ms
+209 silly resolveWithNewModule json-stringify-safe@5.0.1 checking installable status
+210 http fetch GET 304 https://registry.npmjs.org/tslib 51ms (from cache)
+211 http fetch GET 304 https://registry.npmjs.org/deep-metrics 52ms (from cache)
+212 silly pacote version manifest for vxx@1.2.2 fetched in 56ms
+213 silly resolveWithNewModule vxx@1.2.2 checking installable status
+214 silly pacote version manifest for tslib@1.9.3 fetched in 58ms
+215 silly resolveWithNewModule tslib@1.9.3 checking installable status
+216 silly pacote version manifest for deep-metrics@0.0.2 fetched in 66ms
+217 silly resolveWithNewModule deep-metrics@0.0.2 checking installable status
+218 http fetch GET 200 https://registry.npmjs.org/extend 43ms
+219 silly pacote range manifest for debug@^2.6.3 fetched in 44ms
+220 silly resolveWithNewModule debug@2.6.9 checking installable status
+221 http fetch GET 200 https://registry.npmjs.org/uuid 44ms
+222 http fetch GET 200 https://registry.npmjs.org/methods 46ms
+223 silly pacote range manifest for extend@^3.0.0 fetched in 49ms
+224 silly resolveWithNewModule extend@3.0.2 checking installable status
+225 silly pacote range manifest for uuid@^3.0.1 fetched in 53ms
+226 silly resolveWithNewModule uuid@3.3.2 checking installable status
+227 silly pacote range manifest for methods@^1.1.1 fetched in 55ms
+228 silly resolveWithNewModule methods@1.1.2 checking installable status
+229 http fetch GET 304 https://registry.npmjs.org/lodash.merge 65ms (from cache)
+230 http fetch GET 200 https://registry.npmjs.org/is 68ms
+231 silly pacote range manifest for is@^3.2.0 fetched in 70ms
+232 silly resolveWithNewModule is@3.2.1 checking installable status
+233 http fetch GET 304 https://registry.npmjs.org/lodash.findindex 71ms (from cache)
+234 silly pacote range manifest for lodash.findindex@^4.4.0 fetched in 72ms
+235 silly resolveWithNewModule lodash.findindex@4.6.0 checking installable status
+236 http fetch GET 304 https://registry.npmjs.org/lodash.isequal 72ms (from cache)
+237 silly pacote range manifest for lodash.merge@^4.6.0 fetched in 74ms
+238 silly resolveWithNewModule lodash.merge@4.6.1 checking installable status
+239 http fetch GET 304 https://registry.npmjs.org/shimmer 75ms (from cache)
+240 http fetch GET 304 https://registry.npmjs.org/continuation-local-storage 76ms (from cache)
+241 silly pacote range manifest for lodash.isequal@^4.0.0 fetched in 85ms
+242 silly resolveWithNewModule lodash.isequal@4.5.0 checking installable status
+243 silly pacote range manifest for continuation-local-storage@^3.1.4 fetched in 85ms
+244 silly resolveWithNewModule continuation-local-storage@3.2.1 checking installable status
+245 silly pacote range manifest for shimmer@^1.0.0 fetched in 88ms
+246 silly resolveWithNewModule shimmer@1.2.0 checking installable status
+247 http fetch GET 304 https://registry.npmjs.org/emitter-listener 15ms (from cache)
+248 silly pacote range manifest for emitter-listener@^1.1.1 fetched in 31ms
+249 silly resolveWithNewModule emitter-listener@1.1.1 checking installable status
+250 http fetch GET 304 https://registry.npmjs.org/async-listener 41ms (from cache)
+251 silly pacote range manifest for async-listener@^0.6.0 fetched in 58ms
+252 silly resolveWithNewModule async-listener@0.6.9 checking installable status
+253 silly pacote range manifest for debug@^2.6.8 fetched in 3ms
+254 silly resolveWithNewModule debug@2.6.9 checking installable status
+255 silly pacote range manifest for eventemitter2@^4.1.0 fetched in 9ms
+256 silly resolveWithNewModule eventemitter2@4.1.2 checking installable status
+257 silly pacote range manifest for ws@^3.0.0 fetched in 14ms
+258 silly resolveWithNewModule ws@3.3.3 checking installable status
+259 http fetch GET 304 https://registry.npmjs.org/axios 22ms (from cache)
+260 silly pacote range manifest for axios@^0.16.2 fetched in 32ms
+261 silly resolveWithNewModule axios@0.16.2 checking installable status
+262 http fetch GET 200 https://registry.npmjs.org/follow-redirects 17ms
+263 http fetch GET 200 https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.5.1.tgz 23ms
+264 silly pacote range manifest for follow-redirects@^1.2.3 fetched in 42ms
+265 silly resolveWithNewModule follow-redirects@1.5.1 checking installable status
+266 http fetch GET 304 https://registry.npmjs.org/is-buffer 72ms (from cache)
+267 silly pacote range manifest for is-buffer@^1.1.5 fetched in 93ms
+268 silly resolveWithNewModule is-buffer@1.1.6 checking installable status
+269 http fetch GET 304 https://registry.npmjs.org/safe-buffer 35ms (from cache)
+270 silly pacote range manifest for safe-buffer@~5.1.0 fetched in 37ms
+271 silly resolveWithNewModule safe-buffer@5.1.2 checking installable status
+272 http fetch GET 200 https://registry.npmjs.org/ultron 155ms
+273 silly pacote range manifest for ultron@~1.1.0 fetched in 156ms
+274 silly resolveWithNewModule ultron@1.1.1 checking installable status
+275 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 29ms
+276 silly pacote range manifest for escape-string-regexp@^1.0.5 fetched in 42ms
+277 silly resolveWithNewModule escape-string-regexp@1.0.5 checking installable status
+278 http fetch GET 304 https://registry.npmjs.org/supports-color 43ms (from cache)
+279 silly pacote range manifest for supports-color@^5.3.0 fetched in 44ms
+280 silly resolveWithNewModule supports-color@5.4.0 checking installable status
+281 http fetch GET 304 https://registry.npmjs.org/ansi-styles 75ms (from cache)
+282 silly pacote range manifest for ansi-styles@^3.2.1 fetched in 81ms
+283 silly resolveWithNewModule ansi-styles@3.2.1 checking installable status
+284 http fetch GET 200 https://registry.npmjs.org/color-convert 9ms
+285 silly pacote range manifest for color-convert@^1.9.0 fetched in 10ms
+286 silly resolveWithNewModule color-convert@1.9.2 checking installable status
+287 http fetch GET 200 https://registry.npmjs.org/color-name 16ms
+288 silly pacote version manifest for color-name@1.1.1 fetched in 17ms
+289 silly resolveWithNewModule color-name@1.1.1 checking installable status
+290 http fetch GET 200 https://registry.npmjs.org/has-flag 14ms
+291 silly pacote range manifest for has-flag@^3.0.0 fetched in 15ms
+292 silly resolveWithNewModule has-flag@3.0.0 checking installable status
+293 http fetch GET 200 https://registry.npmjs.org/upath 103ms
+294 http fetch GET 200 https://registry.npmjs.org/lodash.debounce 104ms
+295 http fetch GET 304 https://registry.npmjs.org/glob-parent 107ms (from cache)
+296 silly pacote range manifest for upath@^1.0.5 fetched in 107ms
+297 silly resolveWithNewModule upath@1.1.0 checking installable status
+298 silly pacote range manifest for lodash.debounce@^4.0.8 fetched in 108ms
+299 silly resolveWithNewModule lodash.debounce@4.0.8 checking installable status
+300 http fetch GET 304 https://registry.npmjs.org/is-glob 109ms (from cache)
+301 http fetch GET 304 https://registry.npmjs.org/async-each 118ms (from cache)
+302 silly pacote range manifest for glob-parent@^3.1.0 fetched in 131ms
+303 silly resolveWithNewModule glob-parent@3.1.0 checking installable status
+304 silly pacote range manifest for is-glob@^4.0.0 fetched in 131ms
+305 silly resolveWithNewModule is-glob@4.0.0 checking installable status
+306 http fetch GET 304 https://registry.npmjs.org/readdirp 133ms (from cache)
+307 http fetch GET 304 https://registry.npmjs.org/anymatch 146ms (from cache)
+308 http fetch GET 304 https://registry.npmjs.org/is-binary-path 147ms (from cache)
+309 silly pacote range manifest for async-each@^1.0.0 fetched in 149ms
+310 silly resolveWithNewModule async-each@1.0.1 checking installable status
+311 http fetch GET 304 https://registry.npmjs.org/braces 149ms (from cache)
+312 silly pacote range manifest for anymatch@^2.0.0 fetched in 151ms
+313 silly resolveWithNewModule anymatch@2.0.0 checking installable status
+314 silly pacote range manifest for is-binary-path@^1.0.0 fetched in 150ms
+315 silly resolveWithNewModule is-binary-path@1.0.1 checking installable status
+316 silly pacote range manifest for readdirp@^2.0.0 fetched in 151ms
+317 silly resolveWithNewModule readdirp@2.1.0 checking installable status
+318 http fetch GET 304 https://registry.npmjs.org/normalize-path 152ms (from cache)
+319 silly pacote range manifest for normalize-path@^2.1.1 fetched in 153ms
+320 silly resolveWithNewModule normalize-path@2.1.1 checking installable status
+321 silly pacote range manifest for braces@^2.3.0 fetched in 171ms
+322 silly resolveWithNewModule braces@2.3.2 checking installable status
+323 http fetch GET 304 https://registry.npmjs.org/fsevents 72ms (from cache)
+324 silly pacote range manifest for fsevents@^1.2.2 fetched in 83ms
+325 silly resolveWithNewModule fsevents@1.2.4 checking installable status
+326 silly pacote trying https://registry.npmjs.org/fsevents/-/fsevents-1.2.4.tgz by hash: sha512-z8H8/diyk76B7q5wg+Ud0+CqzcAF3mBBI/bA5ne5zrRUUIvNkJY//D3BqyH571KuAC4Nr7Rw7CjWX4r0y9DvNg==
+327 silly pacote https://registry.npmjs.org/fsevents/-/fsevents-1.2.4.tgz extracted to /tmp/npm-13291-9eca7d09/unpack-f27930e4 by content address 212ms
+328 silly addBundled read tarball
+329 silly cleanup remove extracted module
+330 http fetch GET 304 https://registry.npmjs.org/micromatch 48ms (from cache)
+331 silly pacote range manifest for micromatch@^3.1.4 fetched in 62ms
+332 silly resolveWithNewModule micromatch@3.1.10 checking installable status
+333 http fetch GET 200 https://registry.npmjs.org/extend-shallow 73ms
+334 http fetch GET 200 https://registry.npmjs.org/object.pick 74ms
+335 http fetch GET 200 https://registry.npmjs.org/nanomatch 74ms
+336 http fetch GET 200 https://registry.npmjs.org/regex-not 76ms
+337 http fetch GET 200 https://registry.npmjs.org/define-property 77ms
+338 silly pacote range manifest for extend-shallow@^3.0.2 fetched in 81ms
+339 silly resolveWithNewModule extend-shallow@3.0.2 checking installable status
+340 silly pacote range manifest for object.pick@^1.3.0 fetched in 82ms
+341 silly resolveWithNewModule object.pick@1.3.0 checking installable status
+342 silly pacote range manifest for nanomatch@^1.2.9 fetched in 83ms
+343 silly resolveWithNewModule nanomatch@1.2.13 checking installable status
+344 http fetch GET 304 https://registry.npmjs.org/array-unique 85ms (from cache)
+345 silly pacote range manifest for regex-not@^1.0.0 fetched in 85ms
+346 silly resolveWithNewModule regex-not@1.0.2 checking installable status
+347 silly pacote range manifest for define-property@^2.0.2 fetched in 86ms
+348 silly resolveWithNewModule define-property@2.0.2 checking installable status
+349 http fetch GET 200 https://registry.npmjs.org/fragment-cache 86ms
+350 http fetch GET 304 https://registry.npmjs.org/kind-of 86ms (from cache)
+351 http fetch GET 304 https://registry.npmjs.org/extglob 87ms (from cache)
+352 silly pacote range manifest for array-unique@^0.3.2 fetched in 88ms
+353 silly resolveWithNewModule array-unique@0.3.2 checking installable status
+354 silly pacote range manifest for fragment-cache@^0.2.1 fetched in 88ms
+355 silly resolveWithNewModule fragment-cache@0.2.1 checking installable status
+356 http fetch GET 200 https://registry.npmjs.org/snapdragon 24ms
+357 http fetch GET 200 https://registry.npmjs.org/to-regex 30ms
+358 silly pacote range manifest for snapdragon@^0.8.1 fetched in 34ms
+359 silly resolveWithNewModule snapdragon@0.8.2 checking installable status
+360 silly pacote range manifest for to-regex@^3.0.2 fetched in 31ms
+361 silly resolveWithNewModule to-regex@3.0.2 checking installable status
+362 silly pacote range manifest for extglob@^2.0.4 fetched in 118ms
+363 silly resolveWithNewModule extglob@2.0.4 checking installable status
+364 http fetch GET 304 https://registry.npmjs.org/arr-diff 119ms (from cache)
+365 silly pacote range manifest for arr-diff@^4.0.0 fetched in 120ms
+366 silly resolveWithNewModule arr-diff@4.0.0 checking installable status
+367 silly pacote range manifest for kind-of@^6.0.2 fetched in 128ms
+368 silly resolveWithNewModule kind-of@6.0.2 checking installable status
+369 silly pacote range manifest for extend-shallow@^2.0.1 fetched in 42ms
+370 silly resolveWithNewModule extend-shallow@2.0.1 checking installable status
+371 http fetch GET 200 https://registry.npmjs.org/split-string 42ms
+372 silly pacote range manifest for split-string@^3.0.2 fetched in 43ms
+373 silly resolveWithNewModule split-string@3.1.0 checking installable status
+374 http fetch GET 304 https://registry.npmjs.org/isobject 54ms (from cache)
+375 silly pacote range manifest for isobject@^3.0.1 fetched in 55ms
+376 silly resolveWithNewModule isobject@3.0.1 checking installable status
+377 http fetch GET 200 https://registry.npmjs.org/snapdragon-node 78ms
+378 http fetch GET 304 https://registry.npmjs.org/fill-range 79ms (from cache)
+379 http fetch GET 304 https://registry.npmjs.org/repeat-element 79ms (from cache)
+380 silly pacote range manifest for snapdragon-node@^2.0.1 fetched in 80ms
+381 silly resolveWithNewModule snapdragon-node@2.1.1 checking installable status
+382 silly pacote range manifest for fill-range@^4.0.0 fetched in 82ms
+383 silly resolveWithNewModule fill-range@4.0.0 checking installable status
+384 http fetch GET 304 https://registry.npmjs.org/arr-flatten 83ms (from cache)
+385 silly pacote range manifest for arr-flatten@^1.1.0 fetched in 95ms
+386 silly resolveWithNewModule arr-flatten@1.1.0 checking installable status
+387 silly pacote range manifest for repeat-element@^1.1.2 fetched in 100ms
+388 silly resolveWithNewModule repeat-element@1.1.2 checking installable status
+389 http fetch GET 304 https://registry.npmjs.org/is-extendable 39ms (from cache)
+390 silly pacote range manifest for is-extendable@^0.1.0 fetched in 40ms
+391 silly resolveWithNewModule is-extendable@0.1.1 checking installable status
+392 silly pacote range manifest for extend-shallow@^2.0.1 fetched in 2ms
+393 silly resolveWithNewModule extend-shallow@2.0.1 checking installable status
+394 http fetch GET 200 https://registry.npmjs.org/to-regex-range 23ms
+395 silly pacote range manifest for to-regex-range@^2.1.0 fetched in 25ms
+396 silly resolveWithNewModule to-regex-range@2.1.1 checking installable status
+397 http fetch GET 304 https://registry.npmjs.org/is-number 25ms (from cache)
+398 silly pacote range manifest for is-number@^3.0.0 fetched in 26ms
+399 silly resolveWithNewModule is-number@3.0.0 checking installable status
+400 http fetch GET 304 https://registry.npmjs.org/repeat-string 39ms (from cache)
+401 silly pacote range manifest for repeat-string@^1.6.1 fetched in 40ms
+402 silly resolveWithNewModule repeat-string@1.6.1 checking installable status
+403 silly pacote range manifest for kind-of@^3.0.2 fetched in 1ms
+404 silly resolveWithNewModule kind-of@3.2.2 checking installable status
+405 silly pacote range manifest for debug@^2.2.0 fetched in 3ms
+406 silly resolveWithNewModule debug@2.6.9 checking installable status
+407 silly pacote range manifest for extend-shallow@^2.0.1 fetched in 3ms
+408 silly resolveWithNewModule extend-shallow@2.0.1 checking installable status
+409 silly pacote range manifest for define-property@^0.2.5 fetched in 4ms
+410 silly resolveWithNewModule define-property@0.2.5 checking installable status
+411 http fetch GET 200 https://registry.npmjs.org/map-cache 12ms
+412 silly pacote range manifest for map-cache@^0.2.2 fetched in 13ms
+413 silly resolveWithNewModule map-cache@0.2.2 checking installable status
+414 http fetch GET 304 https://registry.npmjs.org/source-map 16ms (from cache)
+415 silly pacote range manifest for source-map@^0.5.6 fetched in 18ms
+416 silly resolveWithNewModule source-map@0.5.7 checking installable status
+417 http fetch GET 200 https://registry.npmjs.org/use 21ms
+418 http fetch GET 200 https://registry.npmjs.org/base 22ms
+419 http fetch GET 200 https://registry.npmjs.org/source-map-resolve 23ms
+420 silly pacote range manifest for base@^0.11.1 fetched in 24ms
+421 silly resolveWithNewModule base@0.11.2 checking installable status
+422 silly pacote range manifest for source-map-resolve@^0.5.0 fetched in 25ms
+423 silly resolveWithNewModule source-map-resolve@0.5.2 checking installable status
+424 silly pacote range manifest for use@^3.1.0 fetched in 29ms
+425 silly resolveWithNewModule use@3.1.1 checking installable status
+426 silly pacote range manifest for define-property@^1.0.0 fetched in 6ms
+427 silly resolveWithNewModule define-property@1.0.0 checking installable status
+428 http fetch GET 200 https://registry.npmjs.org/component-emitter 8ms
+429 silly pacote range manifest for component-emitter@^1.2.1 fetched in 10ms
+430 silly resolveWithNewModule component-emitter@1.2.1 checking installable status
+431 http fetch GET 200 https://registry.npmjs.org/class-utils 11ms
+432 silly pacote range manifest for class-utils@^0.3.5 fetched in 13ms
+433 silly resolveWithNewModule class-utils@0.3.6 checking installable status
+434 http fetch GET 200 https://registry.npmjs.org/pascalcase 14ms
+435 silly pacote range manifest for pascalcase@^0.1.1 fetched in 15ms
+436 silly resolveWithNewModule pascalcase@0.1.1 checking installable status
+437 http fetch GET 200 https://registry.npmjs.org/mixin-deep 19ms
+438 silly pacote range manifest for mixin-deep@^1.2.0 fetched in 20ms
+439 silly resolveWithNewModule mixin-deep@1.3.1 checking installable status
+440 http fetch GET 200 https://registry.npmjs.org/cache-base 22ms
+441 silly pacote range manifest for cache-base@^1.0.1 fetched in 23ms
+442 silly resolveWithNewModule cache-base@1.0.1 checking installable status
+443 http fetch GET 200 https://registry.npmjs.org/unset-value 9ms
+444 http fetch GET 200 https://registry.npmjs.org/get-value 13ms
+445 http fetch GET 200 https://registry.npmjs.org/collection-visit 16ms
+446 silly pacote range manifest for unset-value@^1.0.0 fetched in 16ms
+447 silly resolveWithNewModule unset-value@1.0.0 checking installable status
+448 silly pacote range manifest for get-value@^2.0.6 fetched in 19ms
+449 silly resolveWithNewModule get-value@2.0.6 checking installable status
+450 http fetch GET 200 https://registry.npmjs.org/union-value 19ms
+451 http fetch GET 200 https://registry.npmjs.org/set-value 19ms
+452 silly pacote range manifest for union-value@^1.0.0 fetched in 20ms
+453 silly resolveWithNewModule union-value@1.0.0 checking installable status
+454 silly pacote range manifest for set-value@^2.0.0 fetched in 21ms
+455 silly resolveWithNewModule set-value@2.0.0 checking installable status
+456 http fetch GET 200 https://registry.npmjs.org/has-value 23ms
+457 http fetch GET 200 https://registry.npmjs.org/to-object-path 23ms
+458 silly pacote range manifest for collection-visit@^1.0.0 fetched in 25ms
+459 silly resolveWithNewModule collection-visit@1.0.0 checking installable status
+460 silly pacote range manifest for to-object-path@^0.3.0 fetched in 25ms
+461 silly resolveWithNewModule to-object-path@0.3.0 checking installable status
+462 silly pacote range manifest for has-value@^1.0.0 fetched in 35ms
+463 silly resolveWithNewModule has-value@1.0.0 checking installable status
+464 http fetch GET 200 https://registry.npmjs.org/object-visit 10ms
+465 http fetch GET 200 https://registry.npmjs.org/map-visit 21ms
+466 silly pacote range manifest for object-visit@^1.0.0 fetched in 21ms
+467 silly resolveWithNewModule object-visit@1.0.1 checking installable status
+468 silly pacote range manifest for map-visit@^1.0.0 fetched in 22ms
+469 silly resolveWithNewModule map-visit@1.0.0 checking installable status
+470 http fetch GET 200 https://registry.npmjs.org/has-values 10ms
+471 silly pacote range manifest for has-values@^1.0.0 fetched in 11ms
+472 silly resolveWithNewModule has-values@1.0.0 checking installable status
+473 silly pacote range manifest for kind-of@^4.0.0 fetched in 1ms
+474 silly resolveWithNewModule kind-of@4.0.0 checking installable status
+475 silly pacote range manifest for extend-shallow@^2.0.1 fetched in 1ms
+476 silly resolveWithNewModule extend-shallow@2.0.1 checking installable status
+477 http fetch GET 200 https://registry.npmjs.org/is-plain-object 9ms
+478 silly pacote range manifest for is-plain-object@^2.0.3 fetched in 10ms
+479 silly resolveWithNewModule is-plain-object@2.0.4 checking installable status
+480 http fetch GET 200 https://registry.npmjs.org/assign-symbols 7ms
+481 silly pacote range manifest for is-extendable@^1.0.1 fetched in 8ms
+482 silly resolveWithNewModule is-extendable@1.0.1 checking installable status
+483 silly pacote range manifest for assign-symbols@^1.0.0 fetched in 9ms
+484 silly resolveWithNewModule assign-symbols@1.0.0 checking installable status
+485 silly pacote range manifest for kind-of@^3.0.2 fetched in 1ms
+486 silly resolveWithNewModule kind-of@3.2.2 checking installable status
+487 silly pacote range manifest for set-value@^0.4.3 fetched in 1ms
+488 silly resolveWithNewModule set-value@0.4.3 checking installable status
+489 http fetch GET 200 https://registry.npmjs.org/arr-union 21ms
+490 silly pacote range manifest for arr-union@^3.1.0 fetched in 22ms
+491 silly resolveWithNewModule arr-union@3.1.0 checking installable status
+492 silly pacote range manifest for extend-shallow@^2.0.1 fetched in 1ms
+493 silly resolveWithNewModule extend-shallow@2.0.1 checking installable status
+494 silly pacote range manifest for has-value@^0.3.1 fetched in 1ms
+495 silly resolveWithNewModule has-value@0.3.1 checking installable status
+496 silly pacote range manifest for has-values@^0.1.4 fetched in 1ms
+497 silly resolveWithNewModule has-values@0.1.4 checking installable status
+498 silly pacote range manifest for isobject@^2.0.0 fetched in 10ms
+499 silly resolveWithNewModule isobject@2.1.0 checking installable status
+500 http fetch GET 304 https://registry.npmjs.org/isarray 34ms (from cache)
+501 silly pacote version manifest for isarray@1.0.0 fetched in 36ms
+502 silly resolveWithNewModule isarray@1.0.0 checking installable status
+503 silly pacote range manifest for define-property@^0.2.5 fetched in 1ms
+504 silly resolveWithNewModule define-property@0.2.5 checking installable status
+505 http fetch GET 200 https://registry.npmjs.org/static-extend 12ms
+506 silly pacote range manifest for static-extend@^0.1.1 fetched in 22ms
+507 silly resolveWithNewModule static-extend@0.1.2 checking installable status
+508 http fetch GET 200 https://registry.npmjs.org/is-descriptor 16ms
+509 silly pacote range manifest for is-descriptor@^0.1.0 fetched in 17ms
+510 silly resolveWithNewModule is-descriptor@0.1.6 checking installable status
+511 silly pacote range manifest for kind-of@^5.0.0 fetched in 1ms
+512 silly resolveWithNewModule kind-of@5.1.0 checking installable status
+513 http fetch GET 200 https://registry.npmjs.org/is-data-descriptor 10ms
+514 silly pacote range manifest for is-data-descriptor@^0.1.4 fetched in 11ms
+515 silly resolveWithNewModule is-data-descriptor@0.1.4 checking installable status
+516 http fetch GET 200 https://registry.npmjs.org/is-accessor-descriptor 22ms
+517 silly pacote range manifest for is-accessor-descriptor@^0.1.6 fetched in 23ms
+518 silly resolveWithNewModule is-accessor-descriptor@0.1.6 checking installable status
+519 silly pacote range manifest for kind-of@^3.0.2 fetched in 0ms
+520 silly resolveWithNewModule kind-of@3.2.2 checking installable status
+521 silly pacote range manifest for kind-of@^3.0.2 fetched in 0ms
+522 silly resolveWithNewModule kind-of@3.2.2 checking installable status
+523 silly pacote range manifest for define-property@^0.2.5 fetched in 1ms
+524 silly resolveWithNewModule define-property@0.2.5 checking installable status
+525 http fetch GET 200 https://registry.npmjs.org/object-copy 17ms
+526 silly pacote range manifest for object-copy@^0.1.0 fetched in 18ms
+527 silly resolveWithNewModule object-copy@0.1.0 checking installable status
+528 silly pacote range manifest for define-property@^0.2.5 fetched in 1ms
+529 silly resolveWithNewModule define-property@0.2.5 checking installable status
+530 silly pacote range manifest for kind-of@^3.0.3 fetched in 1ms
+531 silly resolveWithNewModule kind-of@3.2.2 checking installable status
+532 http fetch GET 200 https://registry.npmjs.org/copy-descriptor 14ms
+533 silly pacote range manifest for copy-descriptor@^0.1.0 fetched in 19ms
+534 silly resolveWithNewModule copy-descriptor@0.1.1 checking installable status
+535 silly pacote range manifest for is-descriptor@^1.0.0 fetched in 2ms
+536 silly resolveWithNewModule is-descriptor@1.0.2 checking installable status
+537 silly pacote range manifest for is-accessor-descriptor@^1.0.0 fetched in 2ms
+538 silly resolveWithNewModule is-accessor-descriptor@1.0.0 checking installable status
+539 silly pacote range manifest for is-data-descriptor@^1.0.0 fetched in 2ms
+540 silly resolveWithNewModule is-data-descriptor@1.0.0 checking installable status
+541 silly pacote range manifest for is-extendable@^1.0.1 fetched in 0ms
+542 silly resolveWithNewModule is-extendable@1.0.1 checking installable status
+543 http fetch GET 304 https://registry.npmjs.org/for-in 31ms (from cache)
+544 silly pacote range manifest for for-in@^1.0.2 fetched in 43ms
+545 silly resolveWithNewModule for-in@1.0.2 checking installable status
+546 http fetch GET 200 https://registry.npmjs.org/decode-uri-component 10ms
+547 http fetch GET 200 https://registry.npmjs.org/source-map-url 11ms
+548 http fetch GET 200 https://registry.npmjs.org/resolve-url 11ms
+549 silly pacote range manifest for decode-uri-component@^0.2.0 fetched in 20ms
+550 silly resolveWithNewModule decode-uri-component@0.2.0 checking installable status
+551 silly pacote range manifest for source-map-url@^0.4.0 fetched in 20ms
+552 silly resolveWithNewModule source-map-url@0.4.0 checking installable status
+553 http fetch GET 200 https://registry.npmjs.org/urix 23ms
+554 silly pacote range manifest for resolve-url@^0.2.1 fetched in 24ms
+555 silly resolveWithNewModule resolve-url@0.2.1 checking installable status
+556 silly pacote range manifest for urix@^0.1.0 fetched in 24ms
+557 silly resolveWithNewModule urix@0.1.0 checking installable status
+558 http fetch GET 200 https://registry.npmjs.org/atob 32ms
+559 silly pacote range manifest for atob@^2.1.1 fetched in 34ms
+560 silly resolveWithNewModule atob@2.1.1 checking installable status
+561 silly pacote range manifest for define-property@^1.0.0 fetched in 1ms
+562 silly resolveWithNewModule define-property@1.0.0 checking installable status
+563 http fetch GET 200 https://registry.npmjs.org/snapdragon-util 18ms
+564 silly pacote range manifest for snapdragon-util@^3.0.1 fetched in 28ms
+565 silly resolveWithNewModule snapdragon-util@3.0.1 checking installable status
+566 silly pacote range manifest for is-descriptor@^1.0.0 fetched in 1ms
+567 silly resolveWithNewModule is-descriptor@1.0.2 checking installable status
+568 silly pacote range manifest for is-accessor-descriptor@^1.0.0 fetched in 0ms
+569 silly resolveWithNewModule is-accessor-descriptor@1.0.0 checking installable status
+570 silly pacote range manifest for is-data-descriptor@^1.0.0 fetched in 0ms
+571 silly resolveWithNewModule is-data-descriptor@1.0.0 checking installable status
+572 silly pacote range manifest for kind-of@^3.2.0 fetched in 0ms
+573 silly resolveWithNewModule kind-of@3.2.2 checking installable status
+574 http fetch GET 200 https://registry.npmjs.org/safe-regex 22ms
+575 silly pacote range manifest for safe-regex@^1.1.0 fetched in 23ms
+576 silly resolveWithNewModule safe-regex@1.1.0 checking installable status
+577 silly pacote range manifest for is-descriptor@^1.0.2 fetched in 0ms
+578 silly resolveWithNewModule is-descriptor@1.0.2 checking installable status
+579 silly pacote range manifest for is-accessor-descriptor@^1.0.0 fetched in 0ms
+580 silly resolveWithNewModule is-accessor-descriptor@1.0.0 checking installable status
+581 silly pacote range manifest for is-data-descriptor@^1.0.0 fetched in 0ms
+582 silly resolveWithNewModule is-data-descriptor@1.0.0 checking installable status
+583 http fetch GET 200 https://registry.npmjs.org/ret 19ms
+584 silly pacote range manifest for ret@~0.1.10 fetched in 21ms
+585 silly resolveWithNewModule ret@0.1.15 checking installable status
+586 silly pacote range manifest for define-property@^1.0.0 fetched in 1ms
+587 silly resolveWithNewModule define-property@1.0.0 checking installable status
+588 silly pacote range manifest for extend-shallow@^2.0.1 fetched in 1ms
+589 silly resolveWithNewModule extend-shallow@2.0.1 checking installable status
+590 http fetch GET 304 https://registry.npmjs.org/expand-brackets 36ms (from cache)
+591 silly pacote range manifest for expand-brackets@^2.1.4 fetched in 37ms
+592 silly resolveWithNewModule expand-brackets@2.1.4 checking installable status
+593 silly pacote range manifest for is-descriptor@^1.0.0 fetched in 1ms
+594 silly resolveWithNewModule is-descriptor@1.0.2 checking installable status
+595 silly pacote range manifest for is-accessor-descriptor@^1.0.0 fetched in 0ms
+596 silly resolveWithNewModule is-accessor-descriptor@1.0.0 checking installable status
+597 silly pacote range manifest for is-data-descriptor@^1.0.0 fetched in 1ms
+598 silly resolveWithNewModule is-data-descriptor@1.0.0 checking installable status
+599 silly pacote range manifest for debug@^2.3.3 fetched in 1ms
+600 silly resolveWithNewModule debug@2.6.9 checking installable status
+601 silly pacote range manifest for define-property@^0.2.5 fetched in 1ms
+602 silly resolveWithNewModule define-property@0.2.5 checking installable status
+603 silly pacote range manifest for extend-shallow@^2.0.1 fetched in 2ms
+604 silly resolveWithNewModule extend-shallow@2.0.1 checking installable status
+605 http fetch GET 200 https://registry.npmjs.org/posix-character-classes 9ms
+606 silly pacote range manifest for posix-character-classes@^0.1.0 fetched in 10ms
+607 silly resolveWithNewModule posix-character-classes@0.1.1 checking installable status
+608 http fetch GET 200 https://registry.npmjs.org/is-windows 15ms
+609 silly pacote range manifest for is-windows@^1.0.2 fetched in 16ms
+610 silly resolveWithNewModule is-windows@1.0.2 checking installable status
+611 http fetch GET 304 https://registry.npmjs.org/remove-trailing-separator 33ms (from cache)
+612 silly pacote range manifest for remove-trailing-separator@^1.0.1 fetched in 34ms
+613 silly resolveWithNewModule remove-trailing-separator@1.1.0 checking installable status
+614 http fetch GET 304 https://registry.npmjs.org/nan 20ms (from cache)
+615 silly pacote range manifest for nan@^2.9.2 fetched in 28ms
+616 silly resolveWithNewModule nan@2.10.0 checking installable status
+617 silly pacote range manifest for is-glob@^3.1.0 fetched in 1ms
+618 silly resolveWithNewModule is-glob@3.1.0 checking installable status
+619 http fetch GET 200 https://registry.npmjs.org/path-dirname 20ms
+620 silly pacote range manifest for path-dirname@^1.0.0 fetched in 21ms
+621 silly resolveWithNewModule path-dirname@1.0.2 checking installable status
+622 http fetch GET 304 https://registry.npmjs.org/is-extglob 27ms (from cache)
+623 silly pacote range manifest for is-extglob@^2.1.0 fetched in 28ms
+624 silly resolveWithNewModule is-extglob@2.1.1 checking installable status
+625 http fetch GET 304 https://registry.npmjs.org/binary-extensions 45ms (from cache)
+626 silly pacote range manifest for binary-extensions@^1.0.0 fetched in 46ms
+627 silly resolveWithNewModule binary-extensions@1.11.0 checking installable status
+628 http fetch GET 304 https://registry.npmjs.org/graceful-fs 23ms (from cache)
+629 http fetch GET 304 https://registry.npmjs.org/set-immediate-shim 37ms (from cache)
+630 silly pacote range manifest for graceful-fs@^4.1.2 fetched in 51ms
+631 silly resolveWithNewModule graceful-fs@4.1.11 checking installable status
+632 http fetch GET 304 https://registry.npmjs.org/readable-stream 54ms (from cache)
+633 silly pacote range manifest for set-immediate-shim@^1.0.1 fetched in 59ms
+634 silly resolveWithNewModule set-immediate-shim@1.0.1 checking installable status
+635 silly pacote range manifest for readable-stream@^2.0.2 fetched in 78ms
+636 silly resolveWithNewModule readable-stream@2.3.6 checking installable status
+637 http fetch GET 304 https://registry.npmjs.org/string_decoder 31ms (from cache)
+638 http fetch GET 304 https://registry.npmjs.org/core-util-is 32ms (from cache)
+639 http fetch GET 304 https://registry.npmjs.org/process-nextick-args 33ms (from cache)
+640 silly pacote range manifest for string_decoder@~1.1.1 fetched in 53ms
+641 silly resolveWithNewModule string_decoder@1.1.1 checking installable status
+642 http fetch GET 304 https://registry.npmjs.org/util-deprecate 64ms (from cache)
+643 silly pacote range manifest for process-nextick-args@~2.0.0 fetched in 70ms
+644 silly resolveWithNewModule process-nextick-args@2.0.0 checking installable status
+645 silly pacote range manifest for core-util-is@~1.0.0 fetched in 73ms
+646 silly resolveWithNewModule core-util-is@1.0.2 checking installable status
+647 silly pacote range manifest for util-deprecate@~1.0.1 fetched in 86ms
+648 silly resolveWithNewModule util-deprecate@1.0.2 checking installable status
+649 silly pacote range manifest for chalk@^1.1.3 fetched in 17ms
+650 silly resolveWithNewModule chalk@1.1.3 checking installable status
+651 silly pacote range manifest for supports-color@^2.0.0 fetched in 1ms
+652 silly resolveWithNewModule supports-color@2.0.0 checking installable status
+653 http fetch GET 200 https://registry.npmjs.org/strip-ansi 8ms
+654 silly pacote range manifest for strip-ansi@^3.0.0 fetched in 9ms
+655 silly resolveWithNewModule strip-ansi@3.0.1 checking installable status
+656 silly pacote range manifest for ansi-styles@^2.2.1 fetched in 15ms
+657 silly resolveWithNewModule ansi-styles@2.2.1 checking installable status
+658 http fetch GET 200 https://registry.npmjs.org/has-ansi 34ms
+659 silly pacote range manifest for has-ansi@^2.0.0 fetched in 34ms
+660 silly resolveWithNewModule has-ansi@2.0.0 checking installable status
+661 http fetch GET 200 https://registry.npmjs.org/ansi-regex 22ms
+662 silly pacote range manifest for ansi-regex@^2.0.0 fetched in 28ms
+663 silly resolveWithNewModule ansi-regex@2.1.1 checking installable status
+664 http fetch GET 304 https://registry.npmjs.org/moment-timezone 32ms (from cache)
+665 silly pacote range manifest for moment-timezone@^0.5.x fetched in 33ms
+666 silly resolveWithNewModule moment-timezone@0.5.21 checking installable status
+667 http fetch GET 304 https://registry.npmjs.org/minimist 45ms (from cache)
+668 silly pacote version manifest for minimist@0.0.8 fetched in 45ms
+669 silly resolveWithNewModule minimist@0.0.8 checking installable status
+670 silly pacote range manifest for debug@^2.1.2 fetched in 2ms
+671 silly resolveWithNewModule debug@2.6.9 checking installable status
+672 http fetch GET 200 https://registry.npmjs.org/iconv-lite 11ms
+673 silly pacote range manifest for iconv-lite@^0.4.4 fetched in 12ms
+674 silly resolveWithNewModule iconv-lite@0.4.23 checking installable status
+675 http fetch GET 200 https://registry.npmjs.org/sax 17ms
+676 silly pacote range manifest for sax@^1.2.4 fetched in 18ms
+677 silly resolveWithNewModule sax@1.2.4 checking installable status
+678 http fetch GET 200 https://registry.npmjs.org/safer-buffer 8ms
+679 silly pacote range manifest for safer-buffer@>= 2.1.2 < 3 fetched in 10ms
+680 silly resolveWithNewModule safer-buffer@2.1.2 checking installable status
+681 http fetch GET 304 https://registry.npmjs.org/tv4 19ms (from cache)
+682 silly pacote range manifest for tv4@^1.3 fetched in 20ms
+683 silly resolveWithNewModule tv4@1.3.0 checking installable status
+684 http fetch GET 304 https://registry.npmjs.org/charm 32ms (from cache)
+685 silly pacote range manifest for charm@~0.1.1 fetched in 53ms
+686 silly resolveWithNewModule charm@0.1.2 checking installable status
+687 http fetch GET 304 https://registry.npmjs.org/read 39ms (from cache)
+688 silly pacote range manifest for read@^1.0.4 fetched in 40ms
+689 silly resolveWithNewModule read@1.0.7 checking installable status
+690 http fetch GET 304 https://registry.npmjs.org/mute-stream 43ms (from cache)
+691 silly pacote range manifest for mute-stream@~0.0.4 fetched in 44ms
+692 silly resolveWithNewModule mute-stream@0.0.7 checking installable status
+693 http fetch GET 200 https://registry.npmjs.org/interpret 9ms
+694 silly pacote range manifest for interpret@^1.0.0 fetched in 10ms
+695 silly resolveWithNewModule interpret@1.1.0 checking installable status
+696 http fetch GET 200 https://registry.npmjs.org/rechoir 19ms
+697 silly pacote range manifest for rechoir@^0.6.2 fetched in 20ms
+698 silly resolveWithNewModule rechoir@0.6.2 checking installable status
+699 http fetch GET 200 https://registry.npmjs.org/resolve 19ms
+700 silly pacote range manifest for resolve@^1.1.6 fetched in 21ms
+701 silly resolveWithNewModule resolve@1.8.1 checking installable status
+702 http fetch GET 200 https://registry.npmjs.org/path-parse 19ms
+703 silly pacote range manifest for path-parse@^1.0.5 fetched in 20ms
+704 silly resolveWithNewModule path-parse@1.0.5 checking installable status
+705 silly pacote range manifest for source-map@^0.6.0 fetched in 10ms
+706 silly resolveWithNewModule source-map@0.6.1 checking installable status
+707 http fetch GET 200 https://registry.npmjs.org/buffer-from 10ms
+708 silly pacote range manifest for buffer-from@^1.0.0 fetched in 21ms
+709 silly resolveWithNewModule buffer-from@1.1.0 checking installable status
+710 silly pacote range manifest for async@1.5 fetched in 16ms
+711 silly resolveWithNewModule async@1.5.2 checking installable status
+712 http fetch GET 200 https://registry.npmjs.org/argparse 78ms
+713 silly pacote range manifest for argparse@^1.0.7 fetched in 79ms
+714 silly resolveWithNewModule argparse@1.0.10 checking installable status
+715 silly pacote range manifest for sprintf-js@~1.0.2 fetched in 2ms
+716 silly resolveWithNewModule sprintf-js@1.0.3 checking installable status
+717 silly currentTree !invalid#2
+718 silly idealTree !invalid#1
+718 silly idealTree ├── @pm2/agent@0.5.10
+718 silly idealTree ├── @pm2/io@2.1.0
+718 silly idealTree ├─┬ @pm2/js-api@0.5.21
+718 silly idealTree │ ├── debug@2.6.9
+718 silly idealTree │ ├── eventemitter2@4.1.2
+718 silly idealTree │ └── ws@3.3.3
+718 silly idealTree ├── amp-message@0.1.2
+718 silly idealTree ├── amp@0.3.1
+718 silly idealTree ├── ansi-regex@2.1.1
+718 silly idealTree ├── ansi-styles@3.2.1
+718 silly idealTree ├── any-promise@1.3.0
+718 silly idealTree ├── anymatch@2.0.0
+718 silly idealTree ├─┬ argparse@1.0.10
+718 silly idealTree │ └── sprintf-js@1.0.3
+718 silly idealTree ├── arr-diff@4.0.0
+718 silly idealTree ├── arr-flatten@1.1.0
+718 silly idealTree ├── arr-union@3.1.0
+718 silly idealTree ├── array-unique@0.3.2
+718 silly idealTree ├── assign-symbols@1.0.0
+718 silly idealTree ├── async-each@1.0.1
+718 silly idealTree ├── async-limiter@1.0.0
+718 silly idealTree ├── async-listener@0.6.9
+718 silly idealTree ├── async@2.6.1
+718 silly idealTree ├── atob@2.1.1
+718 silly idealTree ├── axios@0.16.2
+718 silly idealTree ├── balanced-match@1.0.0
+718 silly idealTree ├─┬ base@0.11.2
+718 silly idealTree │ ├── define-property@1.0.0
+718 silly idealTree │ ├── is-accessor-descriptor@1.0.0
+718 silly idealTree │ ├── is-data-descriptor@1.0.0
+718 silly idealTree │ └── is-descriptor@1.0.2
+718 silly idealTree ├── binary-extensions@1.11.0
+718 silly idealTree ├── blessed@0.1.81
+718 silly idealTree ├── brace-expansion@1.1.11
+718 silly idealTree ├─┬ braces@2.3.2
+718 silly idealTree │ └── extend-shallow@2.0.1
+718 silly idealTree ├── buffer-from@1.1.0
+718 silly idealTree ├── cache-base@1.0.1
+718 silly idealTree ├── chalk@2.4.1
+718 silly idealTree ├── charm@0.1.2
+718 silly idealTree ├── chokidar@2.0.4
+718 silly idealTree ├─┬ class-utils@0.3.6
+718 silly idealTree │ └── define-property@0.2.5
+718 silly idealTree ├─┬ cli-table-redemption@1.0.1
+718 silly idealTree │ ├── ansi-styles@2.2.1
+718 silly idealTree │ ├── chalk@1.1.3
+718 silly idealTree │ └── supports-color@2.0.0
+718 silly idealTree ├── coffee-script@1.12.7
+718 silly idealTree ├── collection-visit@1.0.0
+718 silly idealTree ├── color-convert@1.9.2
+718 silly idealTree ├── color-name@1.1.1
+718 silly idealTree ├── commander@2.15.1
+718 silly idealTree ├── component-emitter@1.2.1
+718 silly idealTree ├── concat-map@0.0.1
+718 silly idealTree ├── continuation-local-storage@3.2.1
+718 silly idealTree ├── copy-descriptor@0.1.1
+718 silly idealTree ├── core-util-is@1.0.2
+718 silly idealTree ├── cron@1.3.0
+718 silly idealTree ├── debug@3.1.0
+718 silly idealTree ├── decode-uri-component@0.2.0
+718 silly idealTree ├── deep-metrics@0.0.2
+718 silly idealTree ├── deepmerge@2.1.1
+718 silly idealTree ├─┬ define-property@2.0.2
+718 silly idealTree │ ├── is-accessor-descriptor@1.0.0
+718 silly idealTree │ ├── is-data-descriptor@1.0.0
+718 silly idealTree │ └── is-descriptor@1.0.2
+718 silly idealTree ├── emitter-listener@1.1.1
+718 silly idealTree ├── escape-regexp@0.0.1
+718 silly idealTree ├── escape-string-regexp@1.0.5
+718 silly idealTree ├── event-loop-inspector@1.0.1
+718 silly idealTree ├── eventemitter2@5.0.1
+718 silly idealTree ├─┬ expand-brackets@2.1.4
+718 silly idealTree │ ├── debug@2.6.9
+718 silly idealTree │ ├── define-property@0.2.5
+718 silly idealTree │ └── extend-shallow@2.0.1
+718 silly idealTree ├─┬ extend-shallow@3.0.2
+718 silly idealTree │ └── is-extendable@1.0.1
+718 silly idealTree ├── extend@3.0.2
+718 silly idealTree ├─┬ extglob@2.0.4
+718 silly idealTree │ ├── define-property@1.0.0
+718 silly idealTree │ ├── extend-shallow@2.0.1
+718 silly idealTree │ ├── is-accessor-descriptor@1.0.0
+718 silly idealTree │ ├── is-data-descriptor@1.0.0
+718 silly idealTree │ └── is-descriptor@1.0.2
+718 silly idealTree ├── fclone@1.0.11
+718 silly idealTree ├─┬ fill-range@4.0.0
+718 silly idealTree │ └── extend-shallow@2.0.1
+718 silly idealTree ├── follow-redirects@1.5.1
+718 silly idealTree ├── for-in@1.0.2
+718 silly idealTree ├── fragment-cache@0.2.1
+718 silly idealTree ├── fs.realpath@1.0.0
+718 silly idealTree ├─┬ fsevents@1.2.4
+718 silly idealTree │ ├── abbrev@1.1.1
+718 silly idealTree │ ├── ansi-regex@2.1.1
+718 silly idealTree │ ├── aproba@1.2.0
+718 silly idealTree │ ├── are-we-there-yet@1.1.4
+718 silly idealTree │ ├── balanced-match@1.0.0
+718 silly idealTree │ ├── brace-expansion@1.1.11
+718 silly idealTree │ ├── chownr@1.0.1
+718 silly idealTree │ ├── code-point-at@1.1.0
+718 silly idealTree │ ├── concat-map@0.0.1
+718 silly idealTree │ ├── console-control-strings@1.1.0
+718 silly idealTree │ ├── core-util-is@1.0.2
+718 silly idealTree │ ├── debug@2.6.9
+718 silly idealTree │ ├── deep-extend@0.5.1
+718 silly idealTree │ ├── delegates@1.0.0
+718 silly idealTree │ ├── detect-libc@1.0.3
+718 silly idealTree │ ├── fs-minipass@1.2.5
+718 silly idealTree │ ├── fs.realpath@1.0.0
+718 silly idealTree │ ├── gauge@2.7.4
+718 silly idealTree │ ├── glob@7.1.2
+718 silly idealTree │ ├── has-unicode@2.0.1
+718 silly idealTree │ ├── iconv-lite@0.4.21
+718 silly idealTree │ ├── ignore-walk@3.0.1
+718 silly idealTree │ ├── inflight@1.0.6
+718 silly idealTree │ ├── inherits@2.0.3
+718 silly idealTree │ ├── ini@1.3.5
+718 silly idealTree │ ├── is-fullwidth-code-point@1.0.0
+718 silly idealTree │ ├── isarray@1.0.0
+718 silly idealTree │ ├── minimatch@3.0.4
+718 silly idealTree │ ├── minimist@0.0.8
+718 silly idealTree │ ├── minipass@2.2.4
+718 silly idealTree │ ├── minizlib@1.1.0
+718 silly idealTree │ ├── mkdirp@0.5.1
+718 silly idealTree │ ├── ms@2.0.0
+718 silly idealTree │ ├── needle@2.2.0
+718 silly idealTree │ ├── node-pre-gyp@0.10.0
+718 silly idealTree │ ├── nopt@4.0.1
+718 silly idealTree │ ├── npm-bundled@1.0.3
+718 silly idealTree │ ├── npm-packlist@1.1.10
+718 silly idealTree │ ├── npmlog@4.1.2
+718 silly idealTree │ ├── number-is-nan@1.0.1
+718 silly idealTree │ ├── object-assign@4.1.1
+718 silly idealTree │ ├── once@1.4.0
+718 silly idealTree │ ├── os-homedir@1.0.2
+718 silly idealTree │ ├── os-tmpdir@1.0.2
+718 silly idealTree │ ├── osenv@0.1.5
+718 silly idealTree │ ├── path-is-absolute@1.0.1
+718 silly idealTree │ ├── process-nextick-args@2.0.0
+718 silly idealTree │ ├─┬ rc@1.2.7
+718 silly idealTree │ │ └── minimist@1.2.0
+718 silly idealTree │ ├── readable-stream@2.3.6
+718 silly idealTree │ ├── rimraf@2.6.2
+718 silly idealTree │ ├── safe-buffer@5.1.1
+718 silly idealTree │ ├── safer-buffer@2.1.2
+718 silly idealTree │ ├── sax@1.2.4
+718 silly idealTree │ ├── semver@5.5.0
+718 silly idealTree │ ├── set-blocking@2.0.0
+718 silly idealTree │ ├── signal-exit@3.0.2
+718 silly idealTree │ ├── string_decoder@1.1.1
+718 silly idealTree │ ├── string-width@1.0.2
+718 silly idealTree │ ├── strip-ansi@3.0.1
+718 silly idealTree │ ├── strip-json-comments@2.0.1
+718 silly idealTree │ ├── tar@4.4.1
+718 silly idealTree │ ├── util-deprecate@1.0.2
+718 silly idealTree │ ├── wide-align@1.1.2
+718 silly idealTree │ ├── wrappy@1.0.2
+718 silly idealTree │ └── yallist@3.0.2
+718 silly idealTree ├── get-value@2.0.6
+718 silly idealTree ├── gkt@1.0.0
+718 silly idealTree ├─┬ glob-parent@3.1.0
+718 silly idealTree │ └── is-glob@3.1.0
+718 silly idealTree ├── glob@7.1.2
+718 silly idealTree ├── graceful-fs@4.1.11
+718 silly idealTree ├── handy-http@1.0.2
+718 silly idealTree ├── has-ansi@2.0.0
+718 silly idealTree ├── has-flag@3.0.0
+718 silly idealTree ├── has-value@1.0.0
+718 silly idealTree ├─┬ has-values@1.0.0
+718 silly idealTree │ └── kind-of@4.0.0
+718 silly idealTree ├── iconv-lite@0.4.23
+718 silly idealTree ├── inflight@1.0.6
+718 silly idealTree ├── inherits@2.0.3
+718 silly idealTree ├── install-local@0.6.0
+718 silly idealTree ├── interpret@1.1.0
+718 silly idealTree ├─┬ is-accessor-descriptor@0.1.6
+718 silly idealTree │ └── kind-of@3.2.2
+718 silly idealTree ├── is-binary-path@1.0.1
+718 silly idealTree ├── is-buffer@1.1.6
+718 silly idealTree ├─┬ is-data-descriptor@0.1.4
+718 silly idealTree │ └── kind-of@3.2.2
+718 silly idealTree ├─┬ is-descriptor@0.1.6
+718 silly idealTree │ └── kind-of@5.1.0
+718 silly idealTree ├── is-extendable@0.1.1
+718 silly idealTree ├── is-extglob@2.1.1
+718 silly idealTree ├── is-glob@4.0.0
+718 silly idealTree ├─┬ is-number@3.0.0
+718 silly idealTree │ └── kind-of@3.2.2
+718 silly idealTree ├── is-plain-object@2.0.4
+718 silly idealTree ├── is-windows@1.0.2
+718 silly idealTree ├── is@3.2.1
+718 silly idealTree ├── isarray@1.0.0
+718 silly idealTree ├── isobject@3.0.1
+718 silly idealTree ├── json-stringify-safe@5.0.1
+718 silly idealTree ├── kind-of@6.0.2
+718 silly idealTree ├── lazy@1.0.11
+718 silly idealTree ├── lodash.debounce@4.0.8
+718 silly idealTree ├── lodash.findindex@4.6.0
+718 silly idealTree ├── lodash.isequal@4.5.0
+718 silly idealTree ├── lodash.merge@4.6.1
+718 silly idealTree ├── lodash@4.17.10
+718 silly idealTree ├── map-cache@0.2.2
+718 silly idealTree ├── map-visit@1.0.0
+718 silly idealTree ├── methods@1.1.2
+718 silly idealTree ├── micromatch@3.1.10
+718 silly idealTree ├── minimatch@3.0.4
+718 silly idealTree ├── minimist@0.0.8
+718 silly idealTree ├─┬ mixin-deep@1.3.1
+718 silly idealTree │ └── is-extendable@1.0.1
+718 silly idealTree ├── mkdirp@0.5.1
+718 silly idealTree ├── moment-timezone@0.5.21
+718 silly idealTree ├── moment@2.22.2
+718 silly idealTree ├── ms@2.0.0
+718 silly idealTree ├── mute-stream@0.0.7
+718 silly idealTree ├── mz@2.7.0
+718 silly idealTree ├── nan@2.10.0
+718 silly idealTree ├── nanomatch@1.2.13
+718 silly idealTree ├─┬ needle@2.2.1
+718 silly idealTree │ └── debug@2.6.9
+718 silly idealTree ├── normalize-path@2.1.1
+718 silly idealTree ├─┬ nssocket@0.6.0
+718 silly idealTree │ └── eventemitter2@0.4.14
+718 silly idealTree ├── object-assign@4.1.1
+718 silly idealTree ├─┬ object-copy@0.1.0
+718 silly idealTree │ ├── define-property@0.2.5
+718 silly idealTree │ └── kind-of@3.2.2
+718 silly idealTree ├── object-visit@1.0.1
+718 silly idealTree ├── object.pick@1.3.0
+718 silly idealTree ├── once@1.4.0
+718 silly idealTree ├── pascalcase@0.1.1
+718 silly idealTree ├── path-dirname@1.0.2
+718 silly idealTree ├── path-is-absolute@1.0.1
+718 silly idealTree ├── path-parse@1.0.5
+718 silly idealTree ├── pidusage@2.0.12
+718 silly idealTree ├── pm2-axon-rpc@0.5.1
+718 silly idealTree ├── pm2-axon@3.3.0
+718 silly idealTree ├── pm2-deploy@0.3.10
+718 silly idealTree ├── pm2-multimeter@0.1.2
+718 silly idealTree ├── pm2@3.0.0
+718 silly idealTree ├── posix-character-classes@0.1.1
+718 silly idealTree ├── process-nextick-args@2.0.0
+718 silly idealTree ├── promptly@2.2.0
+718 silly idealTree ├── read@1.0.7
+718 silly idealTree ├── readable-stream@2.3.6
+718 silly idealTree ├── readdirp@2.1.0
+718 silly idealTree ├── rechoir@0.6.2
+718 silly idealTree ├── regex-not@1.0.2
+718 silly idealTree ├── remove-trailing-separator@1.1.0
+718 silly idealTree ├── repeat-element@1.1.2
+718 silly idealTree ├── repeat-string@1.6.1
+718 silly idealTree ├── resolve-url@0.2.1
+718 silly idealTree ├── resolve@1.8.1
+718 silly idealTree ├── ret@0.1.15
+718 silly idealTree ├── rimraf@2.6.2
+718 silly idealTree ├── safe-buffer@5.1.2
+718 silly idealTree ├── safe-regex@1.1.0
+718 silly idealTree ├── safer-buffer@2.1.2
+718 silly idealTree ├── sax@1.2.4
+718 silly idealTree ├── semver@5.5.0
+718 silly idealTree ├── set-immediate-shim@1.0.1
+718 silly idealTree ├─┬ set-value@2.0.0
+718 silly idealTree │ └── extend-shallow@2.0.1
+718 silly idealTree ├── shelljs@0.8.2
+718 silly idealTree ├── shimmer@1.2.0
+718 silly idealTree ├── signal-exit@3.0.2
+718 silly idealTree ├─┬ snapdragon-node@2.1.1
+718 silly idealTree │ ├── define-property@1.0.0
+718 silly idealTree │ ├── is-accessor-descriptor@1.0.0
+718 silly idealTree │ ├── is-data-descriptor@1.0.0
+718 silly idealTree │ └── is-descriptor@1.0.2
+718 silly idealTree ├─┬ snapdragon-util@3.0.1
+718 silly idealTree │ └── kind-of@3.2.2
+718 silly idealTree ├─┬ snapdragon@0.8.2
+718 silly idealTree │ ├── debug@2.6.9
+718 silly idealTree │ ├── define-property@0.2.5
+718 silly idealTree │ └── extend-shallow@2.0.1
+718 silly idealTree ├── source-map-resolve@0.5.2
+718 silly idealTree ├─┬ source-map-support@0.5.6
+718 silly idealTree │ └── source-map@0.6.1
+718 silly idealTree ├── source-map-url@0.4.0
+718 silly idealTree ├── source-map@0.5.7
+718 silly idealTree ├── split-string@3.1.0
+718 silly idealTree ├── sprintf-js@1.1.1
+718 silly idealTree ├─┬ static-extend@0.1.2
+718 silly idealTree │ └── define-property@0.2.5
+718 silly idealTree ├── string_decoder@1.1.1
+718 silly idealTree ├── strip-ansi@3.0.1
+718 silly idealTree ├── supports-color@5.4.0
+718 silly idealTree ├── thenify-all@1.6.0
+718 silly idealTree ├── thenify@3.3.0
+718 silly idealTree ├─┬ to-object-path@0.3.0
+718 silly idealTree │ └── kind-of@3.2.2
+718 silly idealTree ├── to-regex-range@2.1.1
+718 silly idealTree ├── to-regex@3.0.2
+718 silly idealTree ├── tslib@1.9.3
+718 silly idealTree ├── tv4@1.3.0
+718 silly idealTree ├── ultron@1.1.1
+718 silly idealTree ├─┬ union-value@1.0.0
+718 silly idealTree │ ├── extend-shallow@2.0.1
+718 silly idealTree │ └── set-value@0.4.3
+718 silly idealTree ├── uniqid@5.0.3
+718 silly idealTree ├─┬ unset-value@1.0.0
+718 silly idealTree │ ├─┬ has-value@0.3.1
+718 silly idealTree │ │ └── isobject@2.1.0
+718 silly idealTree │ └── has-values@0.1.4
+718 silly idealTree ├── upath@1.1.0
+718 silly idealTree ├── urix@0.1.0
+718 silly idealTree ├── use@3.1.1
+718 silly idealTree ├── util-deprecate@1.0.2
+718 silly idealTree ├── uuid@3.3.2
+718 silly idealTree ├── v8-compile-cache@2.0.0
+718 silly idealTree ├─┬ vizion@0.2.13
+718 silly idealTree │ └── async@1.5.2
+718 silly idealTree ├─┬ vxx@1.2.2
+718 silly idealTree │ └── debug@2.6.9
+718 silly idealTree ├── wrappy@1.0.2
+718 silly idealTree ├── ws@5.2.2
+718 silly idealTree └── yamljs@0.3.0
+719 silly install generateActionsToTake
+720 warn checkPermissions Missing write access to /
+721 silly saveTree !invalid#1
+721 silly saveTree ├─┬ install-local@0.6.0
+721 silly saveTree │ ├── lodash@4.17.10
+721 silly saveTree │ ├─┬ mz@2.7.0
+721 silly saveTree │ │ ├── any-promise@1.3.0
+721 silly saveTree │ │ ├── object-assign@4.1.1
+721 silly saveTree │ │ └─┬ thenify-all@1.6.0
+721 silly saveTree │ │   └── thenify@3.3.0
+721 silly saveTree │ ├─┬ rimraf@2.6.2
+721 silly saveTree │ │ └─┬ glob@7.1.2
+721 silly saveTree │ │   ├── fs.realpath@1.0.0
+721 silly saveTree │ │   ├─┬ inflight@1.0.6
+721 silly saveTree │ │   │ ├─┬ once@1.4.0
+721 silly saveTree │ │   │ │ └── wrappy@1.0.2
+721 silly saveTree │ │   │ └── wrappy@1.0.2
+721 silly saveTree │ │   ├── inherits@2.0.3
+721 silly saveTree │ │   ├─┬ minimatch@3.0.4
+721 silly saveTree │ │   │ └─┬ brace-expansion@1.1.11
+721 silly saveTree │ │   │   ├── balanced-match@1.0.0
+721 silly saveTree │ │   │   └── concat-map@0.0.1
+721 silly saveTree │ │   ├── once@1.4.0
+721 silly saveTree │ │   └── path-is-absolute@1.0.1
+721 silly saveTree │ └── uniqid@5.0.3
+721 silly saveTree └─┬ pm2@3.0.0
+721 silly saveTree   ├─┬ @pm2/agent@0.5.10
+721 silly saveTree   │ ├── async@2.6.1
+721 silly saveTree   │ ├── eventemitter2@5.0.1
+721 silly saveTree   │ ├── fclone@1.0.11
+721 silly saveTree   │ ├── handy-http@1.0.2
+721 silly saveTree   │ ├── moment@2.22.2
+721 silly saveTree   │ ├─┬ nssocket@0.6.0
+721 silly saveTree   │ │ ├── eventemitter2@0.4.14
+721 silly saveTree   │ │ └── lazy@1.0.11
+721 silly saveTree   │ ├─┬ pm2-axon-rpc@0.5.1
+721 silly saveTree   │ │ └─┬ debug@3.1.0
+721 silly saveTree   │ │   └── ms@2.0.0
+721 silly saveTree   │ ├─┬ pm2-axon@3.3.0
+721 silly saveTree   │ │ ├─┬ amp-message@0.1.2
+721 silly saveTree   │ │ │ └── amp@0.3.1
+721 silly saveTree   │ │ ├── amp@0.3.1
+721 silly saveTree   │ │ └── escape-regexp@0.0.1
+721 silly saveTree   │ ├── semver@5.5.0
+721 silly saveTree   │ └─┬ ws@5.2.2
+721 silly saveTree   │   └── async-limiter@1.0.0
+721 silly saveTree   ├─┬ @pm2/io@2.1.0
+721 silly saveTree   │ ├── deep-metrics@0.0.2
+721 silly saveTree   │ ├── deepmerge@2.1.1
+721 silly saveTree   │ ├── event-loop-inspector@1.0.1
+721 silly saveTree   │ ├── json-stringify-safe@5.0.1
+721 silly saveTree   │ ├── signal-exit@3.0.2
+721 silly saveTree   │ ├── tslib@1.9.3
+721 silly saveTree   │ └─┬ vxx@1.2.2
+721 silly saveTree   │   ├─┬ continuation-local-storage@3.2.1
+721 silly saveTree   │   │ ├─┬ async-listener@0.6.9
+721 silly saveTree   │   │ │ └── shimmer@1.2.0
+721 silly saveTree   │   │ └── emitter-listener@1.1.1
+721 silly saveTree   │   ├── debug@2.6.9
+721 silly saveTree   │   ├── extend@3.0.2
+721 silly saveTree   │   ├── is@3.2.1
+721 silly saveTree   │   ├── lodash.findindex@4.6.0
+721 silly saveTree   │   ├── lodash.isequal@4.5.0
+721 silly saveTree   │   ├── lodash.merge@4.6.1
+721 silly saveTree   │   ├── methods@1.1.2
+721 silly saveTree   │   ├── shimmer@1.2.0
+721 silly saveTree   │   └── uuid@3.3.2
+721 silly saveTree   ├─┬ @pm2/js-api@0.5.21
+721 silly saveTree   │ ├─┬ axios@0.16.2
+721 silly saveTree   │ │ ├── follow-redirects@1.5.1
+721 silly saveTree   │ │ └── is-buffer@1.1.6
+721 silly saveTree   │ ├── debug@2.6.9
+721 silly saveTree   │ ├── eventemitter2@4.1.2
+721 silly saveTree   │ └─┬ ws@3.3.3
+721 silly saveTree   │   ├── safe-buffer@5.1.2
+721 silly saveTree   │   └── ultron@1.1.1
+721 silly saveTree   ├── async@2.6.1
+721 silly saveTree   ├── blessed@0.1.81
+721 silly saveTree   ├─┬ chalk@2.4.1
+721 silly saveTree   │ ├─┬ ansi-styles@3.2.1
+721 silly saveTree   │ │ └─┬ color-convert@1.9.2
+721 silly saveTree   │ │   └── color-name@1.1.1
+721 silly saveTree   │ ├── escape-string-regexp@1.0.5
+721 silly saveTree   │ └─┬ supports-color@5.4.0
+721 silly saveTree   │   └── has-flag@3.0.0
+721 silly saveTree   ├─┬ chokidar@2.0.4
+721 silly saveTree   │ ├─┬ anymatch@2.0.0
+721 silly saveTree   │ │ ├─┬ micromatch@3.1.10
+721 silly saveTree   │ │ │ ├── arr-diff@4.0.0
+721 silly saveTree   │ │ │ ├── array-unique@0.3.2
+721 silly saveTree   │ │ │ ├─┬ braces@2.3.2
+721 silly saveTree   │ │ │ │ ├── arr-flatten@1.1.0
+721 silly saveTree   │ │ │ │ ├─┬ extend-shallow@2.0.1
+721 silly saveTree   │ │ │ │ │ └── is-extendable@0.1.1
+721 silly saveTree   │ │ │ │ ├─┬ fill-range@4.0.0
+721 silly saveTree   │ │ │ │ │ ├── extend-shallow@2.0.1
+721 silly saveTree   │ │ │ │ │ ├─┬ is-number@3.0.0
+721 silly saveTree   │ │ │ │ │ │ └── kind-of@3.2.2
+721 silly saveTree   │ │ │ │ │ ├── repeat-string@1.6.1
+721 silly saveTree   │ │ │ │ │ └── to-regex-range@2.1.1
+721 silly saveTree   │ │ │ │ ├── isobject@3.0.1
+721 silly saveTree   │ │ │ │ ├── repeat-element@1.1.2
+721 silly saveTree   │ │ │ │ ├─┬ snapdragon-node@2.1.1
+721 silly saveTree   │ │ │ │ │ ├─┬ define-property@1.0.0
+721 silly saveTree   │ │ │ │ │ │ └─┬ is-descriptor@1.0.2
+721 silly saveTree   │ │ │ │ │ │   ├─┬ is-accessor-descriptor@1.0.0
+721 silly saveTree   │ │ │ │ │ │   │ └── kind-of@6.0.2
+721 silly saveTree   │ │ │ │ │ │   ├── is-data-descriptor@1.0.0
+721 silly saveTree   │ │ │ │ │ │   └── kind-of@6.0.2
+721 silly saveTree   │ │ │ │ │ └─┬ snapdragon-util@3.0.1
+721 silly saveTree   │ │ │ │ │   └── kind-of@3.2.2
+721 silly saveTree   │ │ │ │ ├─┬ snapdragon@0.8.2
+721 silly saveTree   │ │ │ │ │ ├─┬ base@0.11.2
+721 silly saveTree   │ │ │ │ │ │ ├─┬ cache-base@1.0.1
+721 silly saveTree   │ │ │ │ │ │ │ ├─┬ collection-visit@1.0.0
+721 silly saveTree   │ │ │ │ │ │ │ │ ├─┬ map-visit@1.0.0
+721 silly saveTree   │ │ │ │ │ │ │ │ │ └── object-visit@1.0.1
+721 silly saveTree   │ │ │ │ │ │ │ │ └── object-visit@1.0.1
+721 silly saveTree   │ │ │ │ │ │ │ ├── component-emitter@1.2.1
+721 silly saveTree   │ │ │ │ │ │ │ ├── get-value@2.0.6
+721 silly saveTree   │ │ │ │ │ │ │ ├─┬ has-value@1.0.0
+721 silly saveTree   │ │ │ │ │ │ │ │ └─┬ has-values@1.0.0
+721 silly saveTree   │ │ │ │ │ │ │ │   └── kind-of@4.0.0
+721 silly saveTree   │ │ │ │ │ │ │ ├─┬ set-value@2.0.0
+721 silly saveTree   │ │ │ │ │ │ │ │ ├── extend-shallow@2.0.1
+721 silly saveTree   │ │ │ │ │ │ │ │ ├── is-plain-object@2.0.4
+721 silly saveTree   │ │ │ │ │ │ │ │ └─┬ split-string@3.1.0
+721 silly saveTree   │ │ │ │ │ │ │ │   └─┬ extend-shallow@3.0.2
+721 silly saveTree   │ │ │ │ │ │ │ │     ├── assign-symbols@1.0.0
+721 silly saveTree   │ │ │ │ │ │ │ │     └── is-extendable@1.0.1
+721 silly saveTree   │ │ │ │ │ │ │ ├─┬ to-object-path@0.3.0
+721 silly saveTree   │ │ │ │ │ │ │ │ └── kind-of@3.2.2
+721 silly saveTree   │ │ │ │ │ │ │ ├─┬ union-value@1.0.0
+721 silly saveTree   │ │ │ │ │ │ │ │ ├── arr-union@3.1.0
+721 silly saveTree   │ │ │ │ │ │ │ │ └─┬ set-value@0.4.3
+721 silly saveTree   │ │ │ │ │ │ │ │   └── extend-shallow@2.0.1
+721 silly saveTree   │ │ │ │ │ │ │ └─┬ unset-value@1.0.0
+721 silly saveTree   │ │ │ │ │ │ │   └─┬ has-value@0.3.1
+721 silly saveTree   │ │ │ │ │ │ │     ├── has-values@0.1.4
+721 silly saveTree   │ │ │ │ │ │ │     └─┬ isobject@2.1.0
+721 silly saveTree   │ │ │ │ │ │ │       └── isarray@1.0.0
+721 silly saveTree   │ │ │ │ │ │ ├─┬ class-utils@0.3.6
+721 silly saveTree   │ │ │ │ │ │ │ ├─┬ define-property@0.2.5
+721 silly saveTree   │ │ │ │ │ │ │ │ └─┬ is-descriptor@0.1.6
+721 silly saveTree   │ │ │ │ │ │ │ │   ├─┬ is-accessor-descriptor@0.1.6
+721 silly saveTree   │ │ │ │ │ │ │ │   │ └── kind-of@3.2.2
+721 silly saveTree   │ │ │ │ │ │ │ │   ├─┬ is-data-descriptor@0.1.4
+721 silly saveTree   │ │ │ │ │ │ │ │   │ └── kind-of@3.2.2
+721 silly saveTree   │ │ │ │ │ │ │ │   └── kind-of@5.1.0
+721 silly saveTree   │ │ │ │ │ │ │ └─┬ static-extend@0.1.2
+721 silly saveTree   │ │ │ │ │ │ │   ├── define-property@0.2.5
+721 silly saveTree   │ │ │ │ │ │ │   └─┬ object-copy@0.1.0
+721 silly saveTree   │ │ │ │ │ │ │     ├── copy-descriptor@0.1.1
+721 silly saveTree   │ │ │ │ │ │ │     ├── define-property@0.2.5
+721 silly saveTree   │ │ │ │ │ │ │     └── kind-of@3.2.2
+721 silly saveTree   │ │ │ │ │ │ ├── component-emitter@1.2.1
+721 silly saveTree   │ │ │ │ │ │ ├─┬ define-property@1.0.0
+721 silly saveTree   │ │ │ │ │ │ │ └─┬ is-descriptor@1.0.2
+721 silly saveTree   │ │ │ │ │ │ │   ├── is-accessor-descriptor@1.0.0
+721 silly saveTree   │ │ │ │ │ │ │   └── is-data-descriptor@1.0.0
+721 silly saveTree   │ │ │ │ │ │ ├─┬ mixin-deep@1.3.1
+721 silly saveTree   │ │ │ │ │ │ │ ├── for-in@1.0.2
+721 silly saveTree   │ │ │ │ │ │ │ └── is-extendable@1.0.1
+721 silly saveTree   │ │ │ │ │ │ └── pascalcase@0.1.1
+721 silly saveTree   │ │ │ │ │ ├── debug@2.6.9
+721 silly saveTree   │ │ │ │ │ ├── define-property@0.2.5
+721 silly saveTree   │ │ │ │ │ ├── extend-shallow@2.0.1
+721 silly saveTree   │ │ │ │ │ ├── map-cache@0.2.2
+721 silly saveTree   │ │ │ │ │ ├─┬ source-map-resolve@0.5.2
+721 silly saveTree   │ │ │ │ │ │ ├── atob@2.1.1
+721 silly saveTree   │ │ │ │ │ │ ├── decode-uri-component@0.2.0
+721 silly saveTree   │ │ │ │ │ │ ├── resolve-url@0.2.1
+721 silly saveTree   │ │ │ │ │ │ ├── source-map-url@0.4.0
+721 silly saveTree   │ │ │ │ │ │ └── urix@0.1.0
+721 silly saveTree   │ │ │ │ │ ├── source-map@0.5.7
+721 silly saveTree   │ │ │ │ │ └── use@3.1.1
+721 silly saveTree   │ │ │ │ ├── split-string@3.1.0
+721 silly saveTree   │ │ │ │ └─┬ to-regex@3.0.2
+721 silly saveTree   │ │ │ │   ├─┬ define-property@2.0.2
+721 silly saveTree   │ │ │ │   │ └─┬ is-descriptor@1.0.2
+721 silly saveTree   │ │ │ │   │   ├── is-accessor-descriptor@1.0.0
+721 silly saveTree   │ │ │ │   │   └── is-data-descriptor@1.0.0
+721 silly saveTree   │ │ │ │   ├─┬ regex-not@1.0.2
+721 silly saveTree   │ │ │ │   │ └─┬ safe-regex@1.1.0
+721 silly saveTree   │ │ │ │   │   └── ret@0.1.15
+721 silly saveTree   │ │ │ │   └── safe-regex@1.1.0
+721 silly saveTree   │ │ │ ├── define-property@2.0.2
+721 silly saveTree   │ │ │ ├── extend-shallow@3.0.2
+721 silly saveTree   │ │ │ ├─┬ extglob@2.0.4
+721 silly saveTree   │ │ │ │ ├─┬ define-property@1.0.0
+721 silly saveTree   │ │ │ │ │ └─┬ is-descriptor@1.0.2
+721 silly saveTree   │ │ │ │ │   ├── is-accessor-descriptor@1.0.0
+721 silly saveTree   │ │ │ │ │   └── is-data-descriptor@1.0.0
+721 silly saveTree   │ │ │ │ ├─┬ expand-brackets@2.1.4
+721 silly saveTree   │ │ │ │ │ ├── debug@2.6.9
+721 silly saveTree   │ │ │ │ │ ├── define-property@0.2.5
+721 silly saveTree   │ │ │ │ │ ├── extend-shallow@2.0.1
+721 silly saveTree   │ │ │ │ │ └── posix-character-classes@0.1.1
+721 silly saveTree   │ │ │ │ ├── extend-shallow@2.0.1
+721 silly saveTree   │ │ │ │ └── fragment-cache@0.2.1
+721 silly saveTree   │ │ │ ├── fragment-cache@0.2.1
+721 silly saveTree   │ │ │ ├── kind-of@6.0.2
+721 silly saveTree   │ │ │ ├─┬ nanomatch@1.2.13
+721 silly saveTree   │ │ │ │ ├── is-windows@1.0.2
+721 silly saveTree   │ │ │ │ └── object.pick@1.3.0
+721 silly saveTree   │ │ │ ├── object.pick@1.3.0
+721 silly saveTree   │ │ │ ├── regex-not@1.0.2
+721 silly saveTree   │ │ │ ├── snapdragon@0.8.2
+721 silly saveTree   │ │ │ └── to-regex@3.0.2
+721 silly saveTree   │ │ └─┬ normalize-path@2.1.1
+721 silly saveTree   │ │   └── remove-trailing-separator@1.1.0
+721 silly saveTree   │ ├── async-each@1.0.1
+721 silly saveTree   │ ├── braces@2.3.2
+721 silly saveTree   │ ├─┬ fsevents@1.2.4
+721 silly saveTree   │ │ ├── nan@2.10.0
+721 silly saveTree   │ │ └─┬ node-pre-gyp@0.10.0
+721 silly saveTree   │ │   ├── detect-libc@1.0.3
+721 silly saveTree   │ │   ├─┬ mkdirp@0.5.1
+721 silly saveTree   │ │   │ └── minimist@0.0.8
+721 silly saveTree   │ │   ├─┬ needle@2.2.0
+721 silly saveTree   │ │   │ ├─┬ debug@2.6.9
+721 silly saveTree   │ │   │ │ └── ms@2.0.0
+721 silly saveTree   │ │   │ ├─┬ iconv-lite@0.4.21
+721 silly saveTree   │ │   │ │ └── safer-buffer@2.1.2
+721 silly saveTree   │ │   │ └── sax@1.2.4
+721 silly saveTree   │ │   ├─┬ nopt@4.0.1
+721 silly saveTree   │ │   │ ├── abbrev@1.1.1
+721 silly saveTree   │ │   │ └─┬ osenv@0.1.5
+721 silly saveTree   │ │   │   ├── os-homedir@1.0.2
+721 silly saveTree   │ │   │   └── os-tmpdir@1.0.2
+721 silly saveTree   │ │   ├─┬ npm-packlist@1.1.10
+721 silly saveTree   │ │   │ ├─┬ ignore-walk@3.0.1
+721 silly saveTree   │ │   │ │ └─┬ minimatch@3.0.4
+721 silly saveTree   │ │   │ │   └─┬ brace-expansion@1.1.11
+721 silly saveTree   │ │   │ │     ├── balanced-match@1.0.0
+721 silly saveTree   │ │   │ │     └── concat-map@0.0.1
+721 silly saveTree   │ │   │ └── npm-bundled@1.0.3
+721 silly saveTree   │ │   ├─┬ npmlog@4.1.2
+721 silly saveTree   │ │   │ ├─┬ are-we-there-yet@1.1.4
+721 silly saveTree   │ │   │ │ ├── delegates@1.0.0
+721 silly saveTree   │ │   │ │ └─┬ readable-stream@2.3.6
+721 silly saveTree   │ │   │ │   ├── core-util-is@1.0.2
+721 silly saveTree   │ │   │ │   ├── inherits@2.0.3
+721 silly saveTree   │ │   │ │   ├── isarray@1.0.0
+721 silly saveTree   │ │   │ │   ├── process-nextick-args@2.0.0
+721 silly saveTree   │ │   │ │   ├── safe-buffer@5.1.1
+721 silly saveTree   │ │   │ │   ├── string_decoder@1.1.1
+721 silly saveTree   │ │   │ │   └── util-deprecate@1.0.2
+721 silly saveTree   │ │   │ ├── console-control-strings@1.1.0
+721 silly saveTree   │ │   │ ├─┬ gauge@2.7.4
+721 silly saveTree   │ │   │ │ ├── aproba@1.2.0
+721 silly saveTree   │ │   │ │ ├── has-unicode@2.0.1
+721 silly saveTree   │ │   │ │ ├── object-assign@4.1.1
+721 silly saveTree   │ │   │ │ ├── signal-exit@3.0.2
+721 silly saveTree   │ │   │ │ ├─┬ string-width@1.0.2
+721 silly saveTree   │ │   │ │ │ ├── code-point-at@1.1.0
+721 silly saveTree   │ │   │ │ │ ├─┬ is-fullwidth-code-point@1.0.0
+721 silly saveTree   │ │   │ │ │ │ └── number-is-nan@1.0.1
+721 silly saveTree   │ │   │ │ │ └─┬ strip-ansi@3.0.1
+721 silly saveTree   │ │   │ │ │   └── ansi-regex@2.1.1
+721 silly saveTree   │ │   │ │ ├── strip-ansi@3.0.1
+721 silly saveTree   │ │   │ │ └── wide-align@1.1.2
+721 silly saveTree   │ │   │ └── set-blocking@2.0.0
+721 silly saveTree   │ │   ├─┬ rc@1.2.7
+721 silly saveTree   │ │   │ ├── deep-extend@0.5.1
+721 silly saveTree   │ │   │ ├── ini@1.3.5
+721 silly saveTree   │ │   │ ├── minimist@1.2.0
+721 silly saveTree   │ │   │ └── strip-json-comments@2.0.1
+721 silly saveTree   │ │   ├─┬ rimraf@2.6.2
+721 silly saveTree   │ │   │ └─┬ glob@7.1.2
+721 silly saveTree   │ │   │   ├── fs.realpath@1.0.0
+721 silly saveTree   │ │   │   ├─┬ inflight@1.0.6
+721 silly saveTree   │ │   │   │ ├─┬ once@1.4.0
+721 silly saveTree   │ │   │   │ │ └── wrappy@1.0.2
+721 silly saveTree   │ │   │   │ └── wrappy@1.0.2
+721 silly saveTree   │ │   │   ├── once@1.4.0
+721 silly saveTree   │ │   │   └── path-is-absolute@1.0.1
+721 silly saveTree   │ │   ├── semver@5.5.0
+721 silly saveTree   │ │   └─┬ tar@4.4.1
+721 silly saveTree   │ │     ├── chownr@1.0.1
+721 silly saveTree   │ │     ├─┬ fs-minipass@1.2.5
+721 silly saveTree   │ │     │ └─┬ minipass@2.2.4
+721 silly saveTree   │ │     │   └── yallist@3.0.2
+721 silly saveTree   │ │     ├── minipass@2.2.4
+721 silly saveTree   │ │     ├── minizlib@1.1.0
+721 silly saveTree   │ │     └── yallist@3.0.2
+721 silly saveTree   │ ├─┬ glob-parent@3.1.0
+721 silly saveTree   │ │ ├─┬ is-glob@3.1.0
+721 silly saveTree   │ │ │ └── is-extglob@2.1.1
+721 silly saveTree   │ │ └── path-dirname@1.0.2
+721 silly saveTree   │ ├─┬ is-binary-path@1.0.1
+721 silly saveTree   │ │ └── binary-extensions@1.11.0
+721 silly saveTree   │ ├── is-glob@4.0.0
+721 silly saveTree   │ ├── lodash.debounce@4.0.8
+721 silly saveTree   │ ├── normalize-path@2.1.1
+721 silly saveTree   │ ├─┬ readdirp@2.1.0
+721 silly saveTree   │ │ ├── graceful-fs@4.1.11
+721 silly saveTree   │ │ ├─┬ readable-stream@2.3.6
+721 silly saveTree   │ │ │ ├── core-util-is@1.0.2
+721 silly saveTree   │ │ │ ├── process-nextick-args@2.0.0
+721 silly saveTree   │ │ │ ├── string_decoder@1.1.1
+721 silly saveTree   │ │ │ └── util-deprecate@1.0.2
+721 silly saveTree   │ │ └── set-immediate-shim@1.0.1
+721 silly saveTree   │ └── upath@1.1.0
+721 silly saveTree   ├─┬ cli-table-redemption@1.0.1
+721 silly saveTree   │ └─┬ chalk@1.1.3
+721 silly saveTree   │   ├── ansi-styles@2.2.1
+721 silly saveTree   │   ├─┬ has-ansi@2.0.0
+721 silly saveTree   │   │ └── ansi-regex@2.1.1
+721 silly saveTree   │   ├── strip-ansi@3.0.1
+721 silly saveTree   │   └── supports-color@2.0.0
+721 silly saveTree   ├── coffee-script@1.12.7
+721 silly saveTree   ├── commander@2.15.1
+721 silly saveTree   ├─┬ cron@1.3.0
+721 silly saveTree   │ └── moment-timezone@0.5.21
+721 silly saveTree   ├── debug@3.1.0
+721 silly saveTree   ├── eventemitter2@5.0.1
+721 silly saveTree   ├── fclone@1.0.11
+721 silly saveTree   ├── gkt@1.0.0
+721 silly saveTree   ├─┬ mkdirp@0.5.1
+721 silly saveTree   │ └── minimist@0.0.8
+721 silly saveTree   ├── moment@2.22.2
+721 silly saveTree   ├─┬ needle@2.2.1
+721 silly saveTree   │ ├── debug@2.6.9
+721 silly saveTree   │ ├─┬ iconv-lite@0.4.23
+721 silly saveTree   │ │ └── safer-buffer@2.1.2
+721 silly saveTree   │ └── sax@1.2.4
+721 silly saveTree   ├── nssocket@0.6.0
+721 silly saveTree   ├── pidusage@2.0.12
+721 silly saveTree   ├── pm2-axon-rpc@0.5.1
+721 silly saveTree   ├── pm2-axon@3.3.0
+721 silly saveTree   ├─┬ pm2-deploy@0.3.10
+721 silly saveTree   │ └── tv4@1.3.0
+721 silly saveTree   ├─┬ pm2-multimeter@0.1.2
+721 silly saveTree   │ └── charm@0.1.2
+721 silly saveTree   ├─┬ promptly@2.2.0
+721 silly saveTree   │ └─┬ read@1.0.7
+721 silly saveTree   │   └── mute-stream@0.0.7
+721 silly saveTree   ├── semver@5.5.0
+721 silly saveTree   ├─┬ shelljs@0.8.2
+721 silly saveTree   │ ├── interpret@1.1.0
+721 silly saveTree   │ └─┬ rechoir@0.6.2
+721 silly saveTree   │   └─┬ resolve@1.8.1
+721 silly saveTree   │     └── path-parse@1.0.5
+721 silly saveTree   ├─┬ source-map-support@0.5.6
+721 silly saveTree   │ ├── buffer-from@1.1.0
+721 silly saveTree   │ └── source-map@0.6.1
+721 silly saveTree   ├── sprintf-js@1.1.1
+721 silly saveTree   ├── v8-compile-cache@2.0.0
+721 silly saveTree   ├─┬ vizion@0.2.13
+721 silly saveTree   │ └── async@1.5.2
+721 silly saveTree   └─┬ yamljs@0.3.0
+721 silly saveTree     └─┬ argparse@1.0.10
+721 silly saveTree       └── sprintf-js@1.0.3
+722 warn enoent ENOENT: no such file or directory, open '/package.json'
+723 verbose enoent This is related to npm not being able to find a file.
+724 warn !invalid#1 No description
+725 warn !invalid#1 No repository field.
+726 warn !invalid#1 No README data
+727 warn !invalid#1 No license field.
+728 verbose stack Error: EACCES: permission denied, access '/'
+729 verbose cwd /
+730 verbose Linux 2.6.32-openvz-042stab131.1-amd64
+731 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "pm2" "install-local"
+732 verbose node v10.0.0
+733 verbose npm  v5.6.0
+734 error path /
+735 error code EACCES
+736 error errno -13
+737 error syscall access
+738 error Error: EACCES: permission denied, access '/'
+738 error  { Error: EACCES: permission denied, access '/'
+738 error   stack: 'Error: EACCES: permission denied, access \'/\'',
+738 error   errno: -13,
+738 error   code: 'EACCES',
+738 error   syscall: 'access',
+738 error   path: '/' }
+739 error Please try running this command again as root/Administrator.
+740 verbose exit [ -13, true ]

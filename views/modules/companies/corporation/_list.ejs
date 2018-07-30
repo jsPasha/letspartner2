@@ -1,0 +1,69 @@
+<%
+    const getDesctiption = (company) => {
+        if (company.description[locale]) {
+            return company.description[locale].substring(0,100);
+        } else if (company.description[locales[0]]) {
+            return company.description[locales[0]].substring(0,100);
+        } else if (company.description[locales[1]]) {
+            return company.description[locales[1]].substring(0,100);
+        } else {
+            return company.description[locales[2]].substring(0,100);
+        }
+    };    
+%>
+
+<div class="container">
+    <div class="list_item_wrap">
+        <div class="page_<%-type%>_list">
+           
+            <% for (var i = 0; i < companies.length; i++) { %>
+                    <div class="item">
+                        <div class="flx aic">
+                            <a href="/<%-locale%>/companies/<%-type%>/<%-companies[i].createdAt%>/<%-companies[i].alias%>">                    
+                                <img src="/uploads<%- companies[i].images.logo %>" alt="">
+                            </a>                        
+                            <div>
+                                <a class="name" href="/<%-locale%>/companies/<%-type%>/<%-companies[i].createdAt%>/<%-companies[i].alias%>"><%- companies[i].name[locale] || companies[i].name[locales[0]] %></a>
+                                <p><%- getDesctiption(companies[i]) %></p>
+                            </div>                            
+                        </div>
+                        <div class="comp_control">
+                            <a class="more_info" href="/<%-locale%>/companies/<%-type%>/<%-companies[i].createdAt%>/<%-companies[i].alias%>"><%- __tr("More_info") %></a>
+                            <a class="to_chat" href="#"><%- __tr("Chat") %></a>
+                        </div>
+                    </div>
+            <% } %>
+        </div>
+
+            <% if (pages > 1) { %>
+                <ul class="pagination text-center">
+                    <% if (current == 1) { %>
+                        <li class="disabled"><a>First</a></li>
+                    <% } else { %>
+                        <li><a href="/<%- locale  %>/companies/<%-type%>/1">First</a></li>
+                    <% } %>
+                    
+                    <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+                    <% if (i !== 1) { %>
+                    <li class="disabled"><a>...</a></li>
+                    <% } %>
+                    <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+                    <% if (i == current) { %>
+                    <li class="active"><a><%= i %></a></li>
+                    <% } else { %>
+                    <li><a href="/<%- locale  %>/companies/<%-type%>/<%= i %>"><%= i %></a></li>
+                    <% } %>
+                    <% if (i == Number(current) + 4 && i < pages) { %>
+                    <li class="disabled"><a>...</a></li>
+                    <% } %>
+                    <% } %>
+                    <% if (current == pages) { %>
+                    <li class="disabled"><a>Last</a></li>
+                    <% } else { %>
+                    <li><a href="/<%- locale  %>/companies/<%-type%>/<%= pages %>">Last</a></li>
+                    <% } %>
+                </ul>
+            <% } %>
+
+    </div>
+</div>

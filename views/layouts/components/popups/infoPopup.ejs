@@ -1,0 +1,29 @@
+<% const popup = infoPopup.content; %>
+
+<div id="info_popup" class="mfp-hide">
+
+	<% popup.forEach((el) => {
+		switch (el.type) {
+			case "top_header": %>
+				<h2><%- el.text[locale] %></h2>
+			<% break;
+			case "header": %>
+				<h3><%- el.text[locale] %></h3>
+			<% break;
+			case "block": %>
+				<%- el.text[locale] %>
+			<% break;
+			default:
+				break;
+		}
+	}) %>
+	
+	<p>
+		<label>
+			<input type="checkbox" data-show="showInfoPopup" class="show_checkbox">
+			<span><%-__tr('Do_not_show_again')%></span>
+		</label>
+	</p>
+
+	<button type="button" class="close">Закрыть</button>
+</div>

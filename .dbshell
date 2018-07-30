@@ -1,0 +1,15 @@
+db
+use admin
+db
+db.getUsers()
+db
+use admin
+use users
+db
+use admin
+db.getUsers
+db.getUsers()
+db.getUsers()
+bindIp: [127.0.0.1]
+bindIp: ["127.0.0.1"]
+bindIp: ["95.133.50.194","127.0.0.1"]

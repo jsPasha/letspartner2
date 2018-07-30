@@ -1,0 +1,73 @@
+<div class="container profile_section">
+
+	<h1><%- __tr(`News_${action}`) %></h1>
+
+	<div class="admin_block">
+
+		<%- include('../../menu'); %>
+
+		<div>
+
+			<form method="POST" class="<%-action%>_form" action="/action/news/<%- action %><%- action === 'update' ? `/${newsItem.id}` : '' %>">
+
+				<div class="form_block">
+					<h2><%- __tr("Title") %></h2>
+					<% locales.forEach((lang, i) => { %>
+						<div class="form-group">
+							<label for="name_<%-lang%>"><%- __tr("Name") %> <%-lang%></label>
+							<textarea maxlength="200" <%= i === 0 ? 'required' : '' %> id="name_<%-lang%>" name="name[<%-lang%>]" rows="2"><%- action === 'update' ? newsItem.name[lang] : '' %></textarea>
+						</div>
+					<% }); %>
+				</div>
+				
+				<div class="form_block">
+					<h2><%- __tr("Description") %></h2>
+					<% locales.forEach((lang, i) => { %>
+						<div class="form-group">
+							<label for="description_<%-lang%>"><%- __tr("Description") %> <%-lang%></label>
+							<textarea class="ckeditor_item" id="description_<%-lang%>" name="description[<%-lang%>]" rows="6"><%- action === 'update' ? newsItem.description[lang] : '' %></textarea>
+						</div>
+					<% }); %>
+				</div>
+				
+				<div class="form_block">
+
+					<h2><%- __tr("Images") %></h2>
+
+					<div class="form-group form-group-image-pick">
+						<label><%- __tr("News_main_image") %></label>
+						<div class="image_pick_area<%- (action === 'update' && newsItem.images.mainNewsImage) ? ' active' : '' %>">
+							<input class="image_pick" data-ratio="16:9" type="file" accept="image/">
+							<div class="cropped_image_view">
+								<%-(action === 'update' && newsItem.images.mainNewsImage) ? `<img src="/uploads${newsItem.images.mainNewsImage}">` : ''%>
+							</div>
+							<input type="hidden" class="hidden_image_url" value="<%=(action === 'update' && newsItem.images.mainNewsImage) ? newsItem.images.mainNewsImage : ''%>" name="images[mainNewsImage]" />
+							<a class="upload_new_image" data-del-url="<%-action === 'update' ? newsItem.images.mainNewsImage : ''%>" href="#"><%- __tr("upload_new_image") %></a>
+							<a class="delete_image" data-url="<%-action === 'update' ? newsItem.images.mainNewsImage : ''%>" href="#"><%- __tr("delete_image") %></a>				
+						</div>
+					</div>
+
+					<div class="form-group form-group-image-pick">
+						<label><%- __tr("News_thumb_image") %></label>
+						<div class="image_pick_area<%- (action === 'update' && newsItem.images.thumbNewsImage) ? ' active' : '' %>">
+							<input class="image_pick" data-ratio="16:9" type="file" accept="image/">
+							<div class="cropped_image_view">
+								<%-(action === 'update' && newsItem.images.thumbNewsImage) ? `<img src="/uploads${newsItem.images.thumbNewsImage}">` : ''%>
+							</div>
+							<input type="hidden" class="hidden_image_url" value="<%=(action === 'update' && newsItem.images.thumbNewsImage) ? newsItem.images.thumbNewsImage : ''%>" name="images[thumbNewsImage]" />
+							<a class="upload_new_image" data-del-url="<%-action === 'update' ? newsItem.images.thumbNewsImage : ''%>" href="#"><%- __tr("upload_new_image") %></a>
+							<a class="delete_image" data-url="<%-action === 'update' ? newsItem.images.thumbNewsImage : ''%>" href="#"><%- __tr("delete_image") %></a>				
+						</div>
+					</div>
+				</div>
+				
+				<%- include('./constructor/constructor.ejs') %>
+				
+				<div class="center">
+				<input type="submit" value="<%= __tr(action) %>">
+				</div>
+			</form>
+
+		</div>
+	</div>
+</div>

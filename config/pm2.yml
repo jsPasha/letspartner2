@@ -1,0 +1,6 @@
+apps:
+  - script   : ./dengivigoda.store/server.js
+    name     : 'test-server'
+    instances: 1
+    exec_mode: fork
+

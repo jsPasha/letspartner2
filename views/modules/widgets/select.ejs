@@ -1,0 +1,7 @@
+<div class="form-group">
+    <label><%- __tr(name)%></label>
+    <select <%- !query[name] ? `data-` : '' %>name="<%-name%>" v-on:change="setName">
+        <option value="" <%- !query[name] ? 'selected' : '' %>><%- __tr("all") %></option>
+        <%- options.map((el) => `<option value="${el}" ${query[name] === el ? 'selected' : ''}>${ __tr(el) }</option>`) %>
+    </select>
+</div>

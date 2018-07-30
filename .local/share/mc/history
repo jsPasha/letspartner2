@@ -1,0 +1,18 @@
+[cmdline]
+0=[21~
+1=
+
+[inpmc.fm.mkdir]
+0=pm2
+
+[Dir Hist New Right Panel]
+0=/var/www/dengivigoda
+
+[Dir Hist New Left Panel]
+0=/var/www
+1=/var/www/dengivigoda/.pm2
+2=/var/www/dengivigoda/public
+3=/var/www/dengivigoda/node_modules
+4=/var/www/dengivigoda/node_modules/.bin
+5=/var/www/dengivigoda/dengivigoda.store
+6=/var/www/dengivigoda

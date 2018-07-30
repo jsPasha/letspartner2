@@ -1,0 +1,27 @@
+<div class="container profile_section">
+
+	<h1><%- __tr("Users") %></h1>
+	
+	<div class="admin_block">
+
+		<%- include('../../menu'); %>
+
+		<div>
+
+			<div class="autocomplete_wrap">
+				<div class="search_input">
+					<input class="user_autocomplete" data-model="users" placeholder="Search..." type="text" />
+					<button class="clear_input" type="button"></button>
+				</div>
+				<div class="user_autocomplete_result"></div>
+			</div>
+
+			<div class="search_results admin_users_list" style="display: none"></div>
+
+			<%- include('_list'); %>
+		
+		</div>
+	
+	</div>
+
+</div>

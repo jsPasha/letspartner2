@@ -1,0 +1,149 @@
+<div class="container profile_section">
+
+	<h1><%- __tr(`User_edit`) %></h1>
+
+	<div class="admin_block">
+
+		<%- include('../../menu'); %>
+		
+		<div>
+			<ul class="static_menu">
+				<li>
+					<a class="active" href="#block1" data-items=".profile_item">Роли пользователя</a>
+				</li>
+				<li>
+					<a href="#block2" data-items=".profile_item">Профиль пользователя</a>
+				</li>
+				<li>
+					<a href="#block3" data-items=".profile_item">Заявки пользователя</a>
+				</li>
+			</ul>
+
+			<div>
+			<p><%- __tr(`User`) %>: <b><%= userProfile.email %></b></p>
+			<form id="block1" method="POST" class="update_form ajax_form profile_item" action="/action/profile/update/<%=userProfile.id%>">
+
+				<div class="form_block">
+					
+					<div class="form-group">
+						<label>Email</label>
+						<p><%= userProfile.email %></p>
+					</div>
+					<div class="form-group">
+						<label>Original Email</label>
+						<p><%= userProfile.originalEmail %></p>
+					</div>
+
+					<h2>Роли</h2>
+					<h3>Управление порталом</h3>
+					
+					<div class="radiobuttons">
+						<label>
+							<input type="radio" name="role" value="admin" <%- userProfile.role === 'admin' ? 'checked=""' : "" %>>
+							<span>Administrator</span>
+						</label>
+						<label>
+							<input type="radio" name="role" value="user" <%- userProfile.role === 'user' ? 'checked=""' : "" %>>
+							<span>User</span>
+						</label>
+					</div>
+
+				</div>
+<div class="center">
+				<input type="submit" value="<%= __tr('update') %>">
+</div>
+			</form>
+
+				<form id="block2" style="display: none" method="POST" class="update_form ajax_form profile_item" action="/action/profile/update/<%=userProfile.id%>">
+
+					<div class="form_block">
+						<h2><%- __tr('Photo') %></h2>
+						<div class="form-group form-group-image-pick">
+							<label><%- __tr("Avatar") %></label>
+							<div class="image_pick_area active">
+								<input class="image_pick" data-ratio="1:1" type="file" accept="image/">
+								<div class="cropped_image_view">
+									<img src="<%= userProfile.image ? `/uploads${userProfile.image}` : '/uploads/default/profile.svg' %>">
+								</div>
+								<input type="hidden" class="hidden_image_url" value="<%=userProfile.image%>" name="image" />
+								<a class="upload_new_image" data-del-url="<%=userProfile.image%>" href="#"><%- __tr("upload_new_image") %></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_block">
+
+						<h2><%- __tr('Contacts_information') %></h2>
+
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label><%- __tr("Name") %></label>
+								<input type="text" name="name" value="<%= userProfile.name %>"/>
+							</div>
+							<div class="form-group col-md-6">
+								<label><%- __tr("Surname") %></label>
+								<input type="text" name="surname" value="<%= userProfile.surname %>"/>
+							</div>
+							<div class="form-group col-md-6">
+								<label>Skype</label>
+								<input type="text" name="skype" value="<%= userProfile.skype %>"/>
+							</div>
+							<div class="form-group col-md-6">
+								<label>Email</label>
+								<p><%= userProfile.email %></p>
+							</div>
+							<div class="form-group col-md-6">
+								<label><%- __tr("Phone") %></label>
+								<div id="phone" data-phone="<%= userProfile.phone %>"></div>
+							</div>
+							<div class="form-group col-md-6">
+								<label><%- __tr("Timezone") %></label>
+								<select name="timezone" value="<%= userProfile.timezone %>">
+									<%
+									timezoneJson.map((el) => {
+										%>
+										<option value="<%= el.value %>" <%- el.value === userProfile.timezone ? 'selected' : '' %>><%- el.text %></option>
+										<%
+									});
+									%>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="center">
+						<input type="submit" value="<%= __tr('update') %>">
+					</div>
+				</form>
+
+				<div id="block3" style="display: none" class="profile_item">
+					<table class="table">
+						<tr>
+							<td>id</td>
+							<td>Тип завки</td>
+							<td>Название компании</td>
+							<td>Статус</td>
+							<td>Created Date</td>
+							<td>Дата публикации / отклонения / ответа партнеру</td>
+							<td>Действие</td>
+						</tr>	
+						<% companies.forEach((el) => { %>
+							<tr>
+								<td><%- el.id %></td>
+								<td><%- el.type %></td>
+								<td><%- el.name[locale] %></td>
+								<td><%- el.status %></td>
+								<td><%- moment(+el.createdAt).format("LLL"); %></td>
+								<td><%- el.submitedAt ? moment(+el.submitedAt).format("LLL") : '' %></td>
+								<td><a href="/<%-locale%>/admin/company/<%- el.type %>/update/<%- el.id %>"><img width="24" src="/img/pencil.svg" /></a></td>
+							</td>
+						<% }); %>
+					</table>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+</div>

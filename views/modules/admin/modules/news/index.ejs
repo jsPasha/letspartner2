@@ -1,0 +1,19 @@
+<div class="container profile_section">
+
+	<h1><%- __tr("News_admin") %></h1>
+
+	<div class="admin_block">
+
+		<%- include('../../menu'); %>
+
+		<div>
+			<div>
+				<a class="button blue_button" href="/<%- locale %>/admin/news/create">+ <%- __tr("Add_news") %></a>
+			</div>
+
+			<%- include('_list'); %>
+		</div>
+		
+	</div>
+
+</div>

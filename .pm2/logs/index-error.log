@@ -1,0 +1,168 @@
+(node:9295) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+(node:20736) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+TypeError: /var/www/dengivigoda/views/layouts/main.ejs:17
+    15| 		<%- include('components/header'); %>
+    16| 
+ >> 17| 		<%- include(content); %>
+    18| 
+    19| 		<%- include('components/footer'); %>
+    20| 	</div>
+
+/var/www/dengivigoda/views/modules/companies/startup/index.ejs:1
+ >> 1| <div class="page_head" style="background-image: url(/uploads<%=pageHead.content.image%>)">
+    2| 	<h1><%- pageHead.content.name[locale] %></h1>
+    3| 	<p><%- pageHead.content.description[locale] %></p>
+    4| 	<a class="button blue_button" href="<%- user ? `/${locale}/profile/company/startup/create` : `/${locale}/login` %>">Стать частью LET'S PARTNER</a>
+
+Cannot read property 'content' of null
+    at eval (eval at compile (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:618:12), <anonymous>:10:34)
+    at returnedFn (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:653:17)
+    at include (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:651:39)
+    at eval (eval at compile (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:618:12), <anonymous>:14:17)
+    at returnedFn (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:653:17)
+    at tryHandleCache (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:482:10)
+    at View.render (/var/www/dengivigoda/node_modules/express/lib/view.js:135:8)
+    at tryRender (/var/www/dengivigoda/node_modules/express/lib/application.js:640:10)
+    at Function.render (/var/www/dengivigoda/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/var/www/dengivigoda/node_modules/express/lib/response.js:1008:7)
+    at List.find (/var/www/dengivigoda/app/controllers/site.js:27:21)
+    at /var/www/dengivigoda/node_modules/mongoose/lib/model.js:4422:16
+    at process.nextTick (/var/www/dengivigoda/node_modules/mongoose/lib/helpers/query/completeMany.js:35:39)
+    at args.(anonymous function) (/var/www/dengivigoda/node_modules/event-loop-inspector/index.js:133:29)
+    at process._tickCallback (internal/process/next_tick.js:172:11)
+TypeError: /var/www/dengivigoda/views/layouts/main.ejs:17
+    15| 		<%- include('components/header'); %>
+    16| 
+ >> 17| 		<%- include(content); %>
+    18| 
+    19| 		<%- include('components/footer'); %>
+    20| 	</div>
+
+/var/www/dengivigoda/views/modules/companies/corporation/index.ejs:1
+ >> 1| <div class="page_head" style="background-image: url(/uploads<%=pageHead.content.image%>)">
+    2| 	<h1><%- pageHead.content.name[locale] %></h1>
+    3| 	<p><%- pageHead.content.description[locale] %></p>
+    4| 	<a class="button blue_button" href="<%- user ? `/${locale}/profile/company/corporation/create` : `/${locale}/login` %>">Стать частью LET'S PARTNER</a>
+
+Cannot read property 'content' of null
+    at eval (eval at compile (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:618:12), <anonymous>:10:34)
+    at returnedFn (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:653:17)
+    at include (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:651:39)
+    at eval (eval at compile (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:618:12), <anonymous>:14:17)
+    at returnedFn (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:653:17)
+    at tryHandleCache (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:482:10)
+    at View.render (/var/www/dengivigoda/node_modules/express/lib/view.js:135:8)
+    at tryRender (/var/www/dengivigoda/node_modules/express/lib/application.js:640:10)
+    at Function.render (/var/www/dengivigoda/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/var/www/dengivigoda/node_modules/express/lib/response.js:1008:7)
+    at List.find (/var/www/dengivigoda/app/controllers/site.js:27:21)
+    at /var/www/dengivigoda/node_modules/mongoose/lib/model.js:4422:16
+    at process.nextTick (/var/www/dengivigoda/node_modules/mongoose/lib/helpers/query/completeMany.js:35:39)
+    at args.(anonymous function) (/var/www/dengivigoda/node_modules/event-loop-inspector/index.js:133:29)
+    at process._tickCallback (internal/process/next_tick.js:172:11)
+TypeError: /var/www/dengivigoda/views/layouts/main.ejs:17
+    15| 		<%- include('components/header'); %>
+    16| 
+ >> 17| 		<%- include(content); %>
+    18| 
+    19| 		<%- include('components/footer'); %>
+    20| 	</div>
+
+/var/www/dengivigoda/views/modules/companies/corporation/index.ejs:1
+ >> 1| <div class="page_head" style="background-image: url(/uploads<%=pageHead.content.image%>)">
+    2| 	<h1><%- pageHead.content.name[locale] %></h1>
+    3| 	<p><%- pageHead.content.description[locale] %></p>
+    4| 	<a class="button blue_button" href="<%- user ? `/${locale}/profile/company/corporation/create` : `/${locale}/login` %>">Стать частью LET'S PARTNER</a>
+
+Cannot read property 'content' of null
+    at eval (eval at compile (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:618:12), <anonymous>:10:34)
+    at returnedFn (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:653:17)
+    at include (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:651:39)
+    at eval (eval at compile (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:618:12), <anonymous>:14:17)
+    at returnedFn (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:653:17)
+    at tryHandleCache (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:482:10)
+    at View.render (/var/www/dengivigoda/node_modules/express/lib/view.js:135:8)
+    at tryRender (/var/www/dengivigoda/node_modules/express/lib/application.js:640:10)
+    at Function.render (/var/www/dengivigoda/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/var/www/dengivigoda/node_modules/express/lib/response.js:1008:7)
+    at List.find (/var/www/dengivigoda/app/controllers/site.js:27:21)
+    at /var/www/dengivigoda/node_modules/mongoose/lib/model.js:4422:16
+    at process.nextTick (/var/www/dengivigoda/node_modules/mongoose/lib/helpers/query/completeMany.js:35:39)
+    at args.(anonymous function) (/var/www/dengivigoda/node_modules/event-loop-inspector/index.js:133:29)
+    at process._tickCallback (internal/process/next_tick.js:172:11)
+(node:21477) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+(node:28467) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+(node:32455) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+(node:1785) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+(node:5354) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+(node:5774) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+(node:7091) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+(node:19956) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+(node:12002) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+TypeError: /var/www/dengivigoda/views/layouts/main.ejs:16
+    14| 		<%- include('components/header'); %>
+    15| 
+ >> 16| 		<%- include(content); %>
+    17| 
+    18| 		<%- include('components/footer'); %>
+    19| 	</div>
+
+/var/www/dengivigoda/views/modules/index.ejs:1
+ >> 1| <div class="main_page" style="background-image: url(/uploads<%=pageHead.content.image%>)">
+    2| 	<div class="page_head">
+    3| 		<h1>
+    4| 			<%- pageHead.content.name[locale] %>
+
+Cannot read property 'content' of null
+    at eval (eval at compile (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:618:12), <anonymous>:10:34)
+    at returnedFn (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:653:17)
+    at include (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:651:39)
+    at eval (eval at compile (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:618:12), <anonymous>:14:17)
+    at returnedFn (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:653:17)
+    at tryHandleCache (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:482:10)
+    at View.render (/var/www/dengivigoda/node_modules/express/lib/view.js:135:8)
+    at tryRender (/var/www/dengivigoda/node_modules/express/lib/application.js:640:10)
+    at Function.render (/var/www/dengivigoda/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/var/www/dengivigoda/node_modules/express/lib/response.js:1008:7)
+    at Page.findOne.exec (/var/www/dengivigoda/app/controllers/site.js:15:13)
+    at /var/www/dengivigoda/node_modules/mongoose/lib/model.js:4422:16
+    at (anonymous function).call (/var/www/dengivigoda/node_modules/mongoose/lib/query.js:3333:7)
+    at model.Query.Query._completeOne (/var/www/dengivigoda/node_modules/mongoose/lib/query.js:1581:12)
+    at Immediate.Query.base.findOne.call (/var/www/dengivigoda/node_modules/mongoose/lib/query.js:1641:10)
+(node:21099) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead
+TypeError: /var/www/dengivigoda/views/layouts/main.ejs:16
+    14| 		<%- include('components/header'); %>
+    15| 
+ >> 16| 		<%- include(content); %>
+    17| 
+    18| 		<%- include('components/footer'); %>
+    19| 	</div>
+
+/var/www/dengivigoda/views/modules/news/index.ejs:1
+ >> 1| <div class="page_head" style="background-image: url(/uploads<%=pageHead.content.image%>)">
+    2| 	<h1><%- pageHead.content.name[locale] %></h1>
+    3| 	<p><%- pageHead.content.description[locale] %></p>
+    4| </div>
+
+Cannot read property 'content' of null
+    at eval (eval at compile (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:618:12), <anonymous>:10:34)
+    at returnedFn (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:653:17)
+    at include (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:651:39)
+    at eval (eval at compile (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:618:12), <anonymous>:14:17)
+    at returnedFn (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:653:17)
+    at tryHandleCache (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:251:36)
+    at View.exports.renderFile [as engine] (/var/www/dengivigoda/node_modules/ejs/lib/ejs.js:482:10)
+    at View.render (/var/www/dengivigoda/node_modules/express/lib/view.js:135:8)
+    at tryRender (/var/www/dengivigoda/node_modules/express/lib/application.js:640:10)
+    at Function.render (/var/www/dengivigoda/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/var/www/dengivigoda/node_modules/express/lib/response.js:1008:7)
+    at Page.findOne.exec (/var/www/dengivigoda/app/routes/news.js:50:13)
+    at /var/www/dengivigoda/node_modules/mongoose/lib/model.js:4422:16
+    at (anonymous function).call (/var/www/dengivigoda/node_modules/mongoose/lib/query.js:3333:7)
+    at model.Query.Query._completeOne (/var/www/dengivigoda/node_modules/mongoose/lib/query.js:1581:12)
+    at Immediate.Query.base.findOne.call (/var/www/dengivigoda/node_modules/mongoose/lib/query.js:1641:10)
+(node:22322) DeprecationWarning: collection.count is deprecated, and will be removed in a future version. Use collection.countDocuments or collection.estimatedDocumentCount instead

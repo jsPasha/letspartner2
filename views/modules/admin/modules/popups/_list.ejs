@@ -1,0 +1,18 @@
+<div class="list_item_wrap admin_popups_list">      
+    <% for (var i = 0; i < popups.length; i++) { %>
+        <div class="item">
+            <div>
+                <p><%-popups[i].content[0] ? popups[i].content[0].text[locale] : popups[i].type%></p>
+            </div>
+            <div class="control">
+                <p>
+                    <label>
+                        <input type="checkbox" class="state_checkbox" data-state="published" data-model="popup" data-id="<%-popups[i].id%>" <%- popups[i].published ? 'checked=""' : '' %>>
+                        <span><%-__tr('Publish')%></span>
+                    </label>
+                </p>
+                <a href="/<%-locale%>/admin/popups/update/<%- popups[i].id %>"><img src="/img/pencil.svg" alt=""></a>
+            </div>
+        </div>
+    <% } %> 
+</div>
